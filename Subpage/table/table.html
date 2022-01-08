@@ -1,30 +1,32 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" type="text/css" href="css/table.css">
-  <script src="js/table.js"/></script>
   <title>Table</title>
 </head>
+
 <body>
   <div class="table">
     <div class="table_item">
-      <div class="active">登录</div><div>注册</div>
+      <div class="active">登录</div>
+      <div>注册</div>
     </div>
     <div class="table_center">
-      <form method="post" id="Resetform" name="addForm" onsubmit="return checkForm()">
+      <form method="post" id="Resetform" name="addForm" onsubmit="return false">
         <div id="table_center_div" class="div_v">
           <p>账号</p>
           <input type="text" name="name" id="name" placeholder="请输入用户名" onblur="checkName()">
-          <br/>
+          <br />
           <span class="span_p" id="span_name">*请输入合法昵称</span>
           <p>密码</p>
-          <input type="password" name="pwd" id="pwd"  placeholder="请输入6位以上有效数字" onblur="checkPwd()">
+          <input type="password" name="pwd" id="pwd" placeholder="请输入6位以上有效数字" onblur="checkPwd()">
           <span class="span_p" id="span_pwd">*请输入6位以上有效数字</span>
-          <br/>
-          <input type="button" class="submit_btn" id="btn" value="登录" name="">
+          <br />
+          <input type="button" class="submit_btn" id="btn" value="登录" onclick="chlik_sub()" name="">
           <input type="button" class="reset_btn" onclick="resetBtn()" value="重置">
         </div>
       </form>
@@ -39,11 +41,13 @@
           <p>手机号</p>
           <input type="text" name="userphone" id="userphone" placeholder="请输入手机号" onblur="checkUserphone()">
           <span class="span_p" id="span_userphone">*请输入手机号</span>
-          <br/>
+          <br />
           <input type="button" class="submit_btn" onclick="subBtn()" id="Btn" value="注册">
         </div>
       </form>
     </div>
   </div>
+  <script src="js/table.js"></script>
 </body>
+
 </html>
