@@ -77,24 +77,6 @@ label .logo_img {
   height: 500px;
   width: 100%;
 }
-.banner .swiper .swp1 {
-  height: 100%;
-  width: 100%;
-  margin: 0 auto;
-  background-color: #8468ff;
-}
-.banner .swiper .swp2 {
-  height: 100%;
-  width: 100%;
-  margin: 0 auto;
-  background-color: #33c333;
-}
-.banner .swiper .swp3 {
-  height: 100%;
-  width: 100%;
-  margin: 0 auto;
-  background-color: #fbff24;
-}
 .content {
   height: auto;
   width: 1500px;
