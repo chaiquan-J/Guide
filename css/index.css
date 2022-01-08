@@ -1,79 +1,147 @@
-*{
+* {
   margin: 0;
   padding: 0;
   text-decoration: none;
   list-style: none;
   box-sizing: border-box;
 }
-body{
+body {
   font-family: montserrat;
 }
-nav{
+nav {
   background: #2e3458;
   height: 80px;
   width: 100%;
+  position: fixed;
+  top: 0;
+  z-index: 99;
   /* display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: space-between; */
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-between; */
 }
-label.logo{
-  color: #fff;
-  font-size: 30px;
-  line-height: 80px;
-  padding: 0 100px;
-  font-weight: bold;
-}
-.logo_img{
-  width: 113px;
-  margin-left: 50px;
-}
-nav ul{
+nav ul {
   float: right;
   margin-right: 20px;
 }
-nav ul li{
+nav ul li {
   display: inline-block;
   list-style: none;
   line-height: 80px;
   margin: 0 5px;
 }
-nav ul li a{
+nav ul li a {
   color: #fff;
   font-size: 18px;
   padding: 7px 13px;
   border-radius: 3px;
   text-transform: uppercase;
 }
-a.action,a:hover{
+nav a.action,
+nav a:hover {
   background: #1b9bff;
-  transition: .5s;
+  transition: 0.5s;
 }
-.checkbtn{
+nav .checkbtn {
   float: right;
   line-height: 100px;
   margin-right: 40px;
   cursor: pointer;
   display: none;
 }
-#check{
+nav #check {
   display: none;
 }
-.checkbtn_img{
+nav .checkbtn_img {
   width: 35px;
   height: 35px;
 }
-@media(max-width:950px){
-  lable.logo{
+label .logo {
+  color: #fff;
+  font-size: 30px;
+  line-height: 80px;
+  padding: 0 100px;
+  font-weight: bold;
+}
+label .logo_img {
+  width: 113px;
+  margin-left: 50px;
+}
+.banner {
+  height: 500px;
+  width: 100%;
+  background-color: #2c3e5044;
+  margin-top: 80px;
+}
+.banner .swiper {
+  height: 500px;
+  width: 100%;
+}
+.banner .swiper .swp1 {
+  height: 100%;
+  width: 100%;
+  margin: 0 auto;
+  background-color: #8468ff;
+}
+.banner .swiper .swp2 {
+  height: 100%;
+  width: 100%;
+  margin: 0 auto;
+  background-color: #33c333;
+}
+.banner .swiper .swp3 {
+  height: 100%;
+  width: 100%;
+  margin: 0 auto;
+  background-color: #fbff24;
+}
+.content {
+  height: auto;
+  width: 1500px;
+  background-color: #2e3458;
+  margin: 0 auto;
+}
+.content .TV_series {
+  height: auto;
+  width: 100%;
+  margin: 0 auto;
+  background-color: #ff9e71;
+}
+.content .TV_series .max_title {
+  height: 80px;
+  width: 100%;
+  background-color: #71ff71;
+  line-height: 80px;
+}
+.content .TV_series .max_title a {
+  font-size: 30px;
+  font-weight: 550;
+  color: #2e3458;
+}
+.content .TV_series .max_title a:hover {
+  color: #1b9bff;
+}
+.content .TV_series .TV_cont {
+  height: 700px;
+  width: 100%;
+  background-color: #25a000;
+}
+footer {
+  height: 250px;
+  width: 100%;
+  background-color: pink;
+}
+@media (max-width: 950px) {
+  label .logo {
     font-size: 30px;
     padding-left: 50px;
   }
-  nav ul li a{
+  nav ul li a {
     font-size: 16px;
   }
 }
-@media(max-width:950px){
-  ul{
+@media (max-width: 950px) {
+  nav ul {
     position: fixed;
     width: 100%;
     height: 70vh;
@@ -81,55 +149,56 @@ a.action,a:hover{
     top: 80px;
     left: -100%;
     text-align: center;
-    transition: all .5s;
+    transition: all 0.5s;
   }
-  .checkbtn{
+  nav ul li {
     display: block;
   }
-  nav ul li{
-    display: block;
-  }
-  nav ul li a{
+  nav ul li a {
     font-size: 20px;
   }
-  a.action,a:hover{
+  nav a.action,
+  nav a:hover {
     background: none;
     color: #6dadee;
   }
-  #check:checked~ul{
+  nav .checkbtn {
+    display: block !important;
+  }
+  nav #check:checked ~ ul {
     left: 0;
   }
 }
 /* nav form{
-  float: right;
-  display: flex;
-  height: 40px;
-  border-radius: 2px;
-  padding: 2px;
-  background: #2e3458;
-  min-width: 18%!important;
-  border: 1px solid #fff;
-}
-nav form button{
-  padding: 0 15px;
-  background: #ff3d00;
-  border: none;
-  cursor: pointer;
-  font-size: 17px;
-  color: #fff;
-  border-radius: 2px;
-}
-nav form button img{
-  width: 25px;
-  height: 25px;
-}
-nav form .search_data{
-  height: 100%;
-  width: 100%;
-  padding: 0 10px;
-  color: #fff;
-  font-size: 17px;
-  font-weight: 500;
-  background: none;
-  border: none;
-} */
+    float: right;
+    display: flex;
+    height: 40px;
+    border-radius: 2px;
+    padding: 2px;
+    background: #2e3458;
+    min-width: 18%!important;
+    border: 1px solid #fff;
+  }
+  nav form button{
+    padding: 0 15px;
+    background: #ff3d00;
+    border: none;
+    cursor: pointer;
+    font-size: 17px;
+    color: #fff;
+    border-radius: 2px;
+  }
+  nav form button img{
+    width: 25px;
+    height: 25px;
+  }
+  nav form .search_data{
+    height: 100%;
+    width: 100%;
+    padding: 0 10px;
+    color: #fff;
+    font-size: 17px;
+    font-weight: 500;
+    background: none;
+    border: none;
+  } */
