@@ -1,6 +1,6 @@
 // import './header.js' //引入组件
 
-class Navigation extends HTMLElement {
+class variety_show extends HTMLElement {
     constructor() {
         super();
         const shadowRoot = this.attachShadow({ mode: 'open' });
@@ -125,10 +125,10 @@ class Navigation extends HTMLElement {
                 <img src="images/logo.png" alt="" class="logo_img">
             </label>
             <ul>
-                <li><a class="action" href="#">精选</a></li>
+                <li><a href="#">精选</a></li>
                 <li><a href="#">电视剧</a></li>
                 <li><a href="#">电影</a></li>
-                <li><a href="#">综艺</a></li>
+                <li><a class="action" href="#">综艺</a></li>
                 <li><a href="#">纪录片</a></li>
                 <li><a href="Subpage/table/table.html">注册/登录</a></li>
             </ul>
@@ -160,4 +160,4 @@ class Navigation extends HTMLElement {
     }
 }
 // 组件暴露接口
-customElements.define('com-nav', Navigation);
+customElements.define('varietyshow-nav', variety_show);
