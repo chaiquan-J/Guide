@@ -21,7 +21,7 @@ var mySwiper = new Swiper('.swiper', {
     // 自动切换
     autoplay: {
         delay: 3000,
-        pauseOnMouseEnter: false,
+        pauseOnMouseEnter: true,
     },
 
     // 切换速度
