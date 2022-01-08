@@ -1,13 +1,14 @@
-window.onload = function(){
+// 页面加载
+window.onload = function () {
   var item = document.getElementsByClassName("table_item");
   var it = item[0].getElementsByTagName("div");
 
   var content = document.getElementsByClassName("table_center");
   var con = content[0].getElementsByTagName("div");
 
-  for(let i=0;i<it.length;i++){
-    it[i].onclick = function(){
-      for(let j=0;j<it.length;j++){
+  for (let i = 0; i < it.length; i++) {
+    it[i].onclick = function () {
+      for (let j = 0; j < it.length; j++) {
         it[j].className = '';
         con[j].style.display = "none";
       }
@@ -17,18 +18,21 @@ window.onload = function(){
     }
   }
 }
-function checkName() { 
+
+function checkName() {
   var flag_name = false;
-  var name = document.getElementById('name'); 
-  var span_name = document.getElementById('span_name'); 
-  if(name.value.length == 0){ 
+  var name = document.getElementById('name');
+  var span_name = document.getElementById('span_name');
+  if (name.value.length == 0) {
     span_name.style.display = "initial";
     flag_name = false;
-  }else{
+  } else {
     span_name.style.display = "none";
     flag_name = true;
   }
+  return (flag_name);
 }
+
 function checkPwd() {
   var flag_pwd = false;
   var reg_fpwd = /^[0-9]{6,}$/;
@@ -46,20 +50,24 @@ function checkPwd() {
       flag_pwd = true;
     }
   }
+  return (flag_pwd);
 }
-function checkUsername(){
+
+function checkUsername() {
   var flag_username = false;
-  var username = document.getElementById('username'); 
-  var span_username = document.getElementById('span_username'); 
-  if(username.value.length == 0){ 
+  var username = document.getElementById('username');
+  var span_username = document.getElementById('span_username');
+  if (username.value.length == 0) {
     span_username.style.display = "initial";
     flag_username = false;
-  }else{
+  } else {
     span_username.style.display = "none";
     flag_username = true;
   }
+  return (flag_username);
 }
-function checkUserpwd(){
+
+function checkUserpwd() {
   var flag_userpwd = false;
   var reg_fpwd = /^[0-9]{6,}$/;
   var userpwd = document.getElementById("userpwd").value;
@@ -76,7 +84,9 @@ function checkUserpwd(){
       flag_userphone = true;
     }
   }
+  return (flag_userpwd);
 }
+
 function checkUserphone() {
   var flag_userphone = false;
   var reg_phone = /^[1]{1}[0-9]{10}$/;
@@ -94,22 +104,32 @@ function checkUserphone() {
       flag_userphone = true;
     }
   }
+  return (flag_userphone);
 }
 
+function chlik_sub() {
+  console.log(checkName());
+  // checkName()
+  // checkPwd()
+  // checkUsername()
+  // checkUserpwd()
+  // checkUserphone()
+}
 
-function checkForm(){
+function checkForm() {
   var flag = checkName()
   console.log(flag)
   return flag;
   // if(this.flag_pwd){
   //   console.log(123456)
   //   window.location.href="../../index.html";
-	// }
-      // window.location.href="../../index.html";
-    //   console.log(789)
-    // }
-  
+  // }
+  // window.location.href="../../index.html";
+  //   console.log(789)
+  // }
+
 }
-function resetBtn(){
-  document.getElementById("Resetform").reset()
+
+function resetBtn() {
+  document.getElementById("Resetform").reset();
 }
