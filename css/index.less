@@ -8,6 +8,7 @@
 
 body {
     font-family: montserrat;
+    // background-color: #333;
 }
 
 // 设置导航栏
@@ -15,6 +16,9 @@ nav {
     background: #2e3458;
     height: 80px;
     width: 100%;
+    position: fixed;
+    top: 0;
+    z-index: 99;
     /* display: flex;
         flex-wrap: wrap;
         align-items: center;
@@ -85,6 +89,7 @@ label {
     height: 500px;
     width: 100%;
     background-color: #2c3e5044;
+    margin-top: 80px;
 
     .swiper {
         height: 500px;
@@ -115,15 +120,38 @@ label {
 
 .content {
     height: auto;
-    width: 1710px;
+    width: 1500px;
     background-color: #2e3458;
     margin: 0 auto;
 
     .TV_series {
-        height: 400px;
+        height: auto;
         width: 100%;
         margin: 0 auto;
         background-color: #ff9e71;
+
+        .max_title {
+            height: 80px;
+            width: 100%;
+            background-color: #71ff71;
+            line-height: 80px;
+
+            a {
+                font-size: 30px;
+                font-weight: 550;
+                color: #2e3458;
+            }
+
+            a:hover {
+                color: #1b9bff;
+            }
+        }
+
+        .TV_cont {
+            height: 700px;
+            width: 100%;
+            background-color: #25a000;
+        }
     }
 }
 
