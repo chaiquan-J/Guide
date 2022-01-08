@@ -8,78 +8,22 @@
 body {
   font-family: montserrat;
 }
-nav {
-  background: #2e3458;
-  height: 80px;
-  width: 100%;
-  position: fixed;
-  top: 0;
-  z-index: 99;
-  /* display: flex;
-        flex-wrap: wrap;
-        align-items: center;
-        justify-content: space-between; */
-}
-nav ul {
-  float: right;
-  margin-right: 20px;
-}
-nav ul li {
-  display: inline-block;
-  list-style: none;
-  line-height: 80px;
-  margin: 0 5px;
-}
-nav ul li a {
-  color: #fff;
-  font-size: 18px;
-  padding: 7px 13px;
-  border-radius: 3px;
-  text-transform: uppercase;
-}
-nav a.action,
-nav a:hover {
-  background: #1b9bff;
-  transition: 0.5s;
-}
-nav .checkbtn {
-  float: right;
-  line-height: 100px;
-  margin-right: 40px;
-  cursor: pointer;
-  display: none;
-}
-nav #check {
-  display: none;
-}
-nav .checkbtn_img {
-  width: 35px;
-  height: 35px;
-}
-label .logo {
-  color: #fff;
-  font-size: 30px;
-  line-height: 80px;
-  padding: 0 100px;
-  font-weight: bold;
-}
-label .logo_img {
-  width: 113px;
-  margin-left: 50px;
-}
 .banner {
-  height: 500px;
+  height: 630px;
   width: 100%;
-  background-color: #2c3e5044;
   margin-top: 80px;
 }
 .banner .swiper {
-  height: 500px;
+  height: 630px;
+  width: 100%;
+}
+.banner .swiper img {
+  height: 630px;
   width: 100%;
 }
 .content {
   height: auto;
-  width: 1500px;
+  width: 1506px;
   background-color: #2e3458;
   margin: 0 auto;
 }
@@ -90,10 +34,10 @@ label .logo_img {
   background-color: #ff9e71;
 }
 .content .TV_series .max_title {
-  height: 80px;
+  height: 70px;
   width: 100%;
   background-color: #71ff71;
-  line-height: 80px;
+  line-height: 70px;
 }
 .content .TV_series .max_title a {
   font-size: 30px;
@@ -104,9 +48,48 @@ label .logo_img {
   color: #1b9bff;
 }
 .content .TV_series .TV_cont {
-  height: 700px;
+  height: 760px;
   width: 100%;
   background-color: #25a000;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.content .TV_series .TV_cont .TV_box:nth-child(1) {
+  margin: 0;
+}
+.content .TV_series .TV_cont .TV_box:nth-child(8) {
+  margin: 0;
+}
+.content .TV_series .TV_cont .TV_box {
+  height: 277px;
+  width: 198px;
+  margin-left: 20px;
+  margin-bottom: 10px;
+}
+.content .TV_series .TV_cont .TV_box .TV_main {
+  display: block;
+  height: 277px;
+  width: 198px;
+  border-radius: 5px;
+  background-color: #0cd1d8;
+  margin-bottom: 20px;
+  transition: all 0.3s;
+  float: right;
+  z-index: 2;
+  position: relative;
+}
+.content .TV_series .TV_cont .TV_box .TV_main:hover {
+  transform: scale(1.2);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+}
+.content .TV_series .TV_cont .TV_box .introduce {
+  height: 50px;
+  width: 198px;
+  background-color: #ffb8fb;
+  position: relative;
+  top: 295px;
+  z-index: 1;
 }
 footer {
   height: 250px;
@@ -114,41 +97,14 @@ footer {
   background-color: pink;
 }
 @media (max-width: 950px) {
-  label .logo {
-    font-size: 30px;
-    padding-left: 50px;
+  .banner {
+    height: 170px;
   }
-  nav ul li a {
-    font-size: 16px;
+  .banner .swiper {
+    height: 170px;
   }
-}
-@media (max-width: 950px) {
-  nav ul {
-    position: fixed;
-    width: 100%;
-    height: 70vh;
-    background: #2c3e50;
-    top: 80px;
-    left: -100%;
-    text-align: center;
-    transition: all 0.5s;
-  }
-  nav ul li {
-    display: block;
-  }
-  nav ul li a {
-    font-size: 20px;
-  }
-  nav a.action,
-  nav a:hover {
-    background: none;
-    color: #6dadee;
-  }
-  nav .checkbtn {
-    display: block !important;
-  }
-  nav #check:checked ~ ul {
-    left: 0;
+  .banner .swiper img {
+    height: 170px;
   }
 }
 /* nav form{
