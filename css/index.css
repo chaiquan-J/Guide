@@ -56,10 +56,10 @@ body {
   flex-wrap: wrap;
 }
 .content .TV_series .TV_cont .TV_box:nth-child(1) {
-  margin: 0;
+  margin-left: 0;
 }
 .content .TV_series .TV_cont .TV_box:nth-child(8) {
-  margin: 0;
+  margin-left: 0;
 }
 .content .TV_series .TV_cont .TV_box {
   height: 277px;
@@ -105,6 +105,79 @@ footer {
   }
   .banner .swiper img {
     height: 170px;
+  }
+  .banner .swiper .swiper-button-prev {
+    display: none;
+  }
+  .banner .swiper .swiper-button-next {
+    display: none;
+  }
+  .content {
+    height: auto;
+    width: 440px;
+    background-color: #2e3458;
+    margin: 0 auto;
+  }
+  .content .TV_series {
+    height: auto;
+    width: 100%;
+    margin: 0 auto;
+    background-color: #ff9e71;
+  }
+  .content .TV_series .max_title {
+    height: 50px;
+    width: 100%;
+    background-color: #71ff71;
+    line-height: 50px;
+  }
+  .content .TV_series .max_title a {
+    font-size: 25px;
+    font-weight: bold;
+    color: #2e3458;
+  }
+  .content .TV_series .TV_cont {
+    height: auto;
+    width: 100%;
+    background-color: #25a000;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  .content .TV_series .TV_cont .TV_box:nth-child(1) {
+    margin-left: 0px;
+  }
+  .content .TV_series .TV_cont .TV_box:nth-child(2) {
+    margin-left: 0px;
+  }
+  .content .TV_series .TV_cont .TV_box {
+    height: 195px;
+    width: 143px;
+    margin-left: 0px;
+    margin-bottom: 100px;
+  }
+  .content .TV_series .TV_cont .TV_box .TV_main {
+    display: block;
+    height: 195px;
+    width: 143px;
+    border-radius: 5px;
+    background-color: #0cd1d8;
+    margin-bottom: 20px;
+    transition: all 0.3s;
+    float: right;
+    z-index: 2;
+    position: relative;
+  }
+  .content .TV_series .TV_cont .TV_box .TV_main:hover {
+    transform: none;
+    box-shadow: none;
+  }
+  .content .TV_series .TV_cont .TV_box .introduce {
+    height: 50px;
+    width: 198px;
+    background-color: #ffb8fb;
+    position: relative;
+    top: 220px;
+    z-index: 1;
   }
 }
 /* nav form{
