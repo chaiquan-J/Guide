@@ -4,9 +4,46 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="css/table.css">
+  <script src="js/table.js"/></script>
   <title>Table</title>
 </head>
 <body>
-  
+  <div class="table">
+    <div class="table_item">
+      <div class="active">登录</div><div>注册</div>
+    </div>
+    <div class="table_center">
+      <form method="post" id="Resetform" name="addForm" onsubmit="return checkForm()">
+        <div id="table_center_div" class="div_v">
+          <p>账号</p>
+          <input type="text" name="name" id="name" placeholder="请输入用户名" onblur="checkName()">
+          <br/>
+          <span class="span_p" id="span_name">*请输入合法昵称</span>
+          <p>密码</p>
+          <input type="password" name="pwd" id="pwd"  placeholder="请输入6位以上有效数字" onblur="checkPwd()">
+          <span class="span_p" id="span_pwd">*请输入6位以上有效数字</span>
+          <br/>
+          <input type="button" class="submit_btn" id="btn" value="登录" name="">
+          <input type="button" class="reset_btn" onclick="resetBtn()" value="重置">
+        </div>
+      </form>
+      <form method="post" id="Resetform">
+        <div class="div_v">
+          <p>用户名</p>
+          <input type="text" name="username" id="username" placeholder="请输入用户名" onblur="checkUsername()">
+          <span class="span_p" id="span_username">*请输入用户名</span>
+          <p>密码</p>
+          <input type="password" name="userpwd" id="userpwd" placeholder="请输入6位以上有效数字" onblur="checkUserpwd()">
+          <span class="span_p" id="span_userpwd">*请输入6位以上有效数字</span>
+          <p>手机号</p>
+          <input type="text" name="userphone" id="userphone" placeholder="请输入手机号" onblur="checkUserphone()">
+          <span class="span_p" id="span_userphone">*请输入手机号</span>
+          <br/>
+          <input type="button" class="submit_btn" onclick="subBtn()" id="Btn" value="注册">
+        </div>
+      </form>
+    </div>
+  </div>
 </body>
 </html>
