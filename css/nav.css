@@ -63,6 +63,12 @@ nav {
       font-size: 30px;
       padding-left: 50px;
     }
+
+    label .logo_img {
+        width: 113px;
+        margin-left: 30px;
+    }
+
     nav ul {
       position: fixed;
       width: 100%;
