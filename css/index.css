@@ -1,135 +1,142 @@
-*{
+* {
   margin: 0;
   padding: 0;
   text-decoration: none;
   list-style: none;
   box-sizing: border-box;
 }
-body{
+body {
   font-family: montserrat;
 }
-nav{
-  background: #2e3458;
-  height: 80px;
+.banner {
+  height: 630px;
   width: 100%;
-  /* display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: space-between; */
+  margin-top: 80px;
 }
-label.logo{
-  color: #fff;
+.banner .swiper {
+  height: 630px;
+  width: 100%;
+}
+.banner .swiper img {
+  height: 630px;
+  width: 100%;
+}
+.content {
+  height: auto;
+  width: 1506px;
+  background-color: #2e3458;
+  margin: 0 auto;
+}
+.content .TV_series {
+  height: auto;
+  width: 100%;
+  margin: 0 auto;
+  background-color: #ff9e71;
+}
+.content .TV_series .max_title {
+  height: 70px;
+  width: 100%;
+  background-color: #71ff71;
+  line-height: 70px;
+}
+.content .TV_series .max_title a {
   font-size: 30px;
-  line-height: 80px;
-  padding: 0 100px;
-  font-weight: bold;
+  font-weight: 550;
+  color: #2e3458;
 }
-.logo_img{
-  width: 113px;
-  margin-left: 50px;
+.content .TV_series .max_title a:hover {
+  color: #1b9bff;
 }
-nav ul{
+.content .TV_series .TV_cont {
+  height: 760px;
+  width: 100%;
+  background-color: #25a000;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.content .TV_series .TV_cont .TV_box:nth-child(1) {
+  margin: 0;
+}
+.content .TV_series .TV_cont .TV_box:nth-child(8) {
+  margin: 0;
+}
+.content .TV_series .TV_cont .TV_box {
+  height: 277px;
+  width: 198px;
+  margin-left: 20px;
+  margin-bottom: 10px;
+}
+.content .TV_series .TV_cont .TV_box .TV_main {
+  display: block;
+  height: 277px;
+  width: 198px;
+  border-radius: 5px;
+  background-color: #0cd1d8;
+  margin-bottom: 20px;
+  transition: all 0.3s;
   float: right;
-  margin-right: 20px;
+  z-index: 2;
+  position: relative;
 }
-nav ul li{
-  display: inline-block;
-  list-style: none;
-  line-height: 80px;
-  margin: 0 5px;
+.content .TV_series .TV_cont .TV_box .TV_main:hover {
+  transform: scale(1.2);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
 }
-nav ul li a{
-  color: #fff;
-  font-size: 18px;
-  padding: 7px 13px;
-  border-radius: 3px;
-  text-transform: uppercase;
+.content .TV_series .TV_cont .TV_box .introduce {
+  height: 50px;
+  width: 198px;
+  background-color: #ffb8fb;
+  position: relative;
+  top: 295px;
+  z-index: 1;
 }
-a.action,a:hover{
-  background: #1b9bff;
-  transition: .5s;
+footer {
+  height: 250px;
+  width: 100%;
+  background-color: pink;
 }
-.checkbtn{
-  float: right;
-  line-height: 100px;
-  margin-right: 40px;
-  cursor: pointer;
-  display: none;
-}
-#check{
-  display: none;
-}
-.checkbtn_img{
-  width: 35px;
-  height: 35px;
-}
-@media(max-width:950px){
-  lable.logo{
-    font-size: 30px;
-    padding-left: 50px;
+@media (max-width: 950px) {
+  .banner {
+    height: 170px;
   }
-  nav ul li a{
-    font-size: 16px;
+  .banner .swiper {
+    height: 170px;
   }
-}
-@media(max-width:950px){
-  ul{
-    position: fixed;
-    width: 100%;
-    height: 70vh;
-    background: #2c3e50;
-    top: 80px;
-    left: -100%;
-    text-align: center;
-    transition: all .5s;
-  }
-  .checkbtn{
-    display: block;
-  }
-  nav ul li{
-    display: block;
-  }
-  nav ul li a{
-    font-size: 20px;
-  }
-  a.action,a:hover{
-    background: none;
-    color: #6dadee;
-  }
-  #check:checked~ul{
-    left: 0;
+  .banner .swiper img {
+    height: 170px;
   }
 }
 /* nav form{
-  float: right;
-  display: flex;
-  height: 40px;
-  border-radius: 2px;
-  padding: 2px;
-  background: #2e3458;
-  min-width: 18%!important;
-  border: 1px solid #fff;
-}
-nav form button{
-  padding: 0 15px;
-  background: #ff3d00;
-  border: none;
-  cursor: pointer;
-  font-size: 17px;
-  color: #fff;
-  border-radius: 2px;
-}
-nav form button img{
-  width: 25px;
-  height: 25px;
-}
-nav form .search_data{
-  height: 100%;
-  width: 100%;
-  padding: 0 10px;
-  color: #fff;
-  font-size: 17px;
-  font-weight: 500;
-  background: none;
-  border: none;
-} */
+    float: right;
+    display: flex;
+    height: 40px;
+    border-radius: 2px;
+    padding: 2px;
+    background: #2e3458;
+    min-width: 18%!important;
+    border: 1px solid #fff;
+  }
+  nav form button{
+    padding: 0 15px;
+    background: #ff3d00;
+    border: none;
+    cursor: pointer;
+    font-size: 17px;
+    color: #fff;
+    border-radius: 2px;
+  }
+  nav form button img{
+    width: 25px;
+    height: 25px;
+  }
+  nav form .search_data{
+    height: 100%;
+    width: 100%;
+    padding: 0 10px;
+    color: #fff;
+    font-size: 17px;
+    font-weight: 500;
+    background: none;
+    border: none;
+  } */
