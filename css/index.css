@@ -12,6 +12,7 @@ body {
   height: 630px;
   width: 100%;
   margin-top: 80px;
+  overflow: hidden;
 }
 .banner .swiper {
   height: 630px;
@@ -63,7 +64,7 @@ body {
   margin-left: 0;
 }
 .content .TV_series .TV_cont .TV_box {
-  height: 277px;
+  height: 345px;
   width: 198px;
   margin-left: 20px;
   margin-bottom: 10px;
@@ -76,9 +77,7 @@ body {
   background-color: #0cd1d8;
   margin-bottom: 20px;
   transition: all 0.3s;
-  float: right;
   z-index: 2;
-  position: relative;
   overflow: hidden;
 }
 .content .TV_series .TV_cont .TV_box .TV_main img {
@@ -90,12 +89,67 @@ body {
   box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
 }
 .content .TV_series .TV_cont .TV_box .introduce {
-  height: 50px;
+  height: 45px;
   width: 198px;
   background-color: #ffb8fb;
-  position: relative;
-  top: 295px;
   z-index: 1;
+}
+.content .TV_series .TV_cont .TV_box .introduce span:nth-child(1) {
+  display: block;
+  font-size: 15px;
+  font-weight: bold;
+  color: #2e3458;
+  margin-bottom: 5px;
+}
+.content .TV_series .TV_cont .TV_box .introduce a:hover span:nth-child(1) {
+  color: #0cd1d8;
+}
+.content .TV_series .TV_cont .TV_box .introduce span:nth-child(2) {
+  display: block;
+  font-size: 10px;
+}
+.content .TV_series .TV_phone {
+  height: auto;
+  width: 100%;
+  background-color: #25a000;
+  flex-direction: row;
+  flex-wrap: wrap;
+  display: none;
+}
+.content .TV_series .TV_phone .TV_box {
+  height: auto;
+  width: 120px;
+  margin-left: 5px;
+  margin-bottom: 20px;
+  flex: 1;
+}
+.content .TV_series .TV_phone .TV_box .TV_main {
+  display: block;
+  height: 165px;
+  width: 120px;
+  border-radius: 5px;
+  background-color: #0cd1d8;
+  margin-bottom: 20px;
+  transition: all 0.3s;
+  overflow: hidden;
+}
+.content .TV_series .TV_phone .TV_box .introduce {
+  height: 35px;
+  width: 120px;
+  background-color: #ffb8fb;
+}
+.content .TV_series .TV_phone .TV_box .introduce span:nth-child(1) {
+  display: block;
+  font-size: 10px;
+  color: #2e3458;
+  font-weight: bold;
+}
+.content .TV_series .TV_phone .TV_box .introduce span:nth-child(2) {
+  display: block;
+  font-size: 10px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
 footer {
   height: 250px;
@@ -104,13 +158,14 @@ footer {
 }
 @media (max-width: 950px) {
   .banner {
-    height: 170px;
+    height: 240px;
   }
   .banner .swiper {
-    height: 170px;
+    height: 240px;
   }
   .banner .swiper img {
-    height: 170px;
+    height: 240px;
+    width: 130%;
   }
   .banner .swiper .swiper-button-prev {
     display: none;
@@ -142,41 +197,6 @@ footer {
     color: #2e3458;
   }
   .content .TV_series .TV_cont {
-    height: auto;
-    width: 100%;
-    background-color: #25a000;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-  }
-  .content .TV_series .TV_cont .TV_box:nth-child(1) {
-    margin-left: 6px;
-  }
-  .content .TV_series .TV_cont .TV_box:nth-child(4) {
-    margin-left: 6px;
-  }
-  .content .TV_series .TV_cont .TV_box:nth-child(7) {
-    display: none;
-  }
-  .content .TV_series .TV_cont .TV_box:nth-child(8) {
-    display: none;
-  }
-  .content .TV_series .TV_cont .TV_box:nth-child(9) {
-    display: none;
-  }
-  .content .TV_series .TV_cont .TV_box:nth-child(10) {
-    display: none;
-  }
-  .content .TV_series .TV_cont .TV_box:nth-child(11) {
-    display: none;
-  }
-  .content .TV_series .TV_cont .TV_box:nth-child(12) {
-    display: none;
-  }
-  .content .TV_series .TV_cont .TV_box:nth-child(13) {
-    display: none;
-  }
-  .content .TV_series .TV_cont .TV_box:nth-child(14) {
     display: none;
   }
   .content .TV_series .TV_cont .TV_box {
@@ -221,6 +241,9 @@ footer {
     overflow: hidden;
     text-overflow: ellipsis;
     white-space: nowrap;
+  }
+  .content .TV_series .TV_phone {
+    display: flex;
   }
 }
 /* nav form{
