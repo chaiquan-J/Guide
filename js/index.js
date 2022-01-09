@@ -24,6 +24,8 @@ var mySwiper = new Swiper('.swiper', {
         pauseOnMouseEnter: true,
     },
 
+    updateOnWindowResize: true,
+
     // 切换速度
     speed: 1000,
 })

@@ -28,28 +28,38 @@ body {
   background-color: #2e3458;
   margin: 0 auto;
 }
-.content .TV_series {
+.content .TV_series,
+.content .Movie,
+.content .variety_show {
   height: auto;
   width: 100%;
   margin: 0 auto;
   background-color: #ff9e71;
 }
-.content .TV_series .max_title {
+.content .TV_series .max_title,
+.content .Movie .max_title,
+.content .variety_show .max_title {
   height: 70px;
   width: 100%;
   background-color: #71ff71;
   line-height: 70px;
 }
-.content .TV_series .max_title a {
+.content .TV_series .max_title a,
+.content .Movie .max_title a,
+.content .variety_show .max_title a {
   font-size: 30px;
   font-weight: 550;
   color: #2e3458;
   margin-left: 10px;
 }
-.content .TV_series .max_title a:hover {
+.content .TV_series .max_title a:hover,
+.content .Movie .max_title a:hover,
+.content .variety_show .max_title a:hover {
   color: #1b9bff;
 }
-.content .TV_series .TV_cont {
+.content .TV_series .pc_max,
+.content .Movie .pc_max,
+.content .variety_show .pc_max {
   height: 760px;
   width: 100%;
   background-color: #25a000;
@@ -57,19 +67,27 @@ body {
   flex-direction: row;
   flex-wrap: wrap;
 }
-.content .TV_series .TV_cont .TV_box:nth-child(1) {
+.content .TV_series .pc_max .pc_box:nth-child(1),
+.content .Movie .pc_max .pc_box:nth-child(1),
+.content .variety_show .pc_max .pc_box:nth-child(1) {
   margin-left: 0;
 }
-.content .TV_series .TV_cont .TV_box:nth-child(8) {
+.content .TV_series .pc_max .pc_box:nth-child(8),
+.content .Movie .pc_max .pc_box:nth-child(8),
+.content .variety_show .pc_max .pc_box:nth-child(8) {
   margin-left: 0;
 }
-.content .TV_series .TV_cont .TV_box {
+.content .TV_series .pc_max .pc_box,
+.content .Movie .pc_max .pc_box,
+.content .variety_show .pc_max .pc_box {
   height: 345px;
   width: 198px;
   margin-left: 20px;
   margin-bottom: 10px;
 }
-.content .TV_series .TV_cont .TV_box .TV_main {
+.content .TV_series .pc_max .pc_box .pc_main,
+.content .Movie .pc_max .pc_box .pc_main,
+.content .variety_show .pc_max .pc_box .pc_main {
   display: block;
   height: 277px;
   width: 198px;
@@ -80,35 +98,49 @@ body {
   z-index: 2;
   overflow: hidden;
 }
-.content .TV_series .TV_cont .TV_box .TV_main img {
-  height: 100%;
-  width: 100%;
+.content .TV_series .pc_max .pc_box .pc_main .back_img,
+.content .Movie .pc_max .pc_box .pc_main .back_img,
+.content .variety_show .pc_max .pc_box .pc_main .back_img {
+  background-size: 50% 50%;
+  background-position: 50% 50%;
 }
-.content .TV_series .TV_cont .TV_box .TV_main:hover {
+.content .TV_series .pc_max .pc_box .pc_main:hover,
+.content .Movie .pc_max .pc_box .pc_main:hover,
+.content .variety_show .pc_max .pc_box .pc_main:hover {
   transform: scale(1.2);
   box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
 }
-.content .TV_series .TV_cont .TV_box .introduce {
+.content .TV_series .pc_max .pc_box .introduce,
+.content .Movie .pc_max .pc_box .introduce,
+.content .variety_show .pc_max .pc_box .introduce {
   height: 45px;
   width: 198px;
   background-color: #ffb8fb;
   z-index: 1;
 }
-.content .TV_series .TV_cont .TV_box .introduce span:nth-child(1) {
+.content .TV_series .pc_max .pc_box .introduce span:nth-child(1),
+.content .Movie .pc_max .pc_box .introduce span:nth-child(1),
+.content .variety_show .pc_max .pc_box .introduce span:nth-child(1) {
   display: block;
   font-size: 15px;
   font-weight: bold;
   color: #2e3458;
   margin-bottom: 5px;
 }
-.content .TV_series .TV_cont .TV_box .introduce a:hover span:nth-child(1) {
+.content .TV_series .pc_max .pc_box .introduce a:hover span:nth-child(1),
+.content .Movie .pc_max .pc_box .introduce a:hover span:nth-child(1),
+.content .variety_show .pc_max .pc_box .introduce a:hover span:nth-child(1) {
   color: #0cd1d8;
 }
-.content .TV_series .TV_cont .TV_box .introduce span:nth-child(2) {
+.content .TV_series .pc_max .pc_box .introduce span:nth-child(2),
+.content .Movie .pc_max .pc_box .introduce span:nth-child(2),
+.content .variety_show .pc_max .pc_box .introduce span:nth-child(2) {
   display: block;
   font-size: 10px;
 }
-.content .TV_series .TV_phone {
+.content .TV_series .mobile_max,
+.content .Movie .mobile_max,
+.content .variety_show .mobile_max {
   height: auto;
   width: 100%;
   background-color: #25a000;
@@ -116,14 +148,18 @@ body {
   flex-wrap: wrap;
   display: none;
 }
-.content .TV_series .TV_phone .TV_box {
+.content .TV_series .mobile_max .pc_box,
+.content .Movie .mobile_max .pc_box,
+.content .variety_show .mobile_max .pc_box {
   height: auto;
   width: 120px;
   margin-left: 5px;
   margin-bottom: 20px;
   flex: 1;
 }
-.content .TV_series .TV_phone .TV_box .TV_main {
+.content .TV_series .mobile_max .pc_box .pc_main,
+.content .Movie .mobile_max .pc_box .pc_main,
+.content .variety_show .mobile_max .pc_box .pc_main {
   display: block;
   height: 165px;
   width: 120px;
@@ -132,19 +168,157 @@ body {
   margin-bottom: 20px;
   transition: all 0.3s;
   overflow: hidden;
+  background-size: 50% 50%;
+  background-position: 50% 50%;
 }
-.content .TV_series .TV_phone .TV_box .introduce {
+.content .TV_series .mobile_max .pc_box .introduce,
+.content .Movie .mobile_max .pc_box .introduce,
+.content .variety_show .mobile_max .pc_box .introduce {
   height: 35px;
   width: 120px;
   background-color: #ffb8fb;
 }
-.content .TV_series .TV_phone .TV_box .introduce span:nth-child(1) {
+.content .TV_series .mobile_max .pc_box .introduce span:nth-child(1),
+.content .Movie .mobile_max .pc_box .introduce span:nth-child(1),
+.content .variety_show .mobile_max .pc_box .introduce span:nth-child(1) {
   display: block;
   font-size: 10px;
   color: #2e3458;
   font-weight: bold;
 }
-.content .TV_series .TV_phone .TV_box .introduce span:nth-child(2) {
+.content .TV_series .mobile_max .pc_box .introduce span:nth-child(2),
+.content .Movie .mobile_max .pc_box .introduce span:nth-child(2),
+.content .variety_show .mobile_max .pc_box .introduce span:nth-child(2) {
+  display: block;
+  font-size: 10px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.content .TV_series .pc_min,
+.content .Movie .pc_min,
+.content .variety_show .pc_min {
+  height: 400px;
+  width: 100%;
+  background-color: #25a000;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.content .TV_series .pc_min .min_box:nth-child(1),
+.content .Movie .pc_min .min_box:nth-child(1),
+.content .variety_show .pc_min .min_box:nth-child(1) {
+  margin-left: 0px;
+}
+.content .TV_series .pc_min .min_box:nth-child(8),
+.content .Movie .pc_min .min_box:nth-child(8),
+.content .variety_show .pc_min .min_box:nth-child(8) {
+  margin-left: 0px;
+}
+.content .TV_series .pc_min .min_box,
+.content .Movie .pc_min .min_box,
+.content .variety_show .pc_min .min_box {
+  height: 164px;
+  width: 198px;
+  margin-left: 20px;
+  margin-bottom: 10px;
+}
+.content .TV_series .pc_min .min_box .min_img,
+.content .Movie .pc_min .min_box .min_img,
+.content .variety_show .pc_min .min_box .min_img {
+  height: 111px;
+  width: 100%;
+  background-color: #1b9bff;
+  transition: all 0.5s;
+  border-radius: 5px;
+  margin-bottom: 18px;
+}
+.content .TV_series .pc_min .min_box .min_img:hover,
+.content .Movie .pc_min .min_box .min_img:hover,
+.content .variety_show .pc_min .min_box .min_img:hover {
+  transform: scale(1.2);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+}
+.content .TV_series .pc_min .min_box .introduce,
+.content .Movie .pc_min .min_box .introduce,
+.content .variety_show .pc_min .min_box .introduce {
+  height: 45px;
+  width: 100%;
+  background-color: #ffb8fb;
+}
+.content .TV_series .pc_min .min_box .introduce span:nth-child(1),
+.content .Movie .pc_min .min_box .introduce span:nth-child(1),
+.content .variety_show .pc_min .min_box .introduce span:nth-child(1) {
+  display: block;
+  font-size: 15px;
+  color: #2e3458;
+  font-weight: bold;
+}
+.content .TV_series .pc_min .min_box .introduce span:nth-child(2),
+.content .Movie .pc_min .min_box .introduce span:nth-child(2),
+.content .variety_show .pc_min .min_box .introduce span:nth-child(2) {
+  display: block;
+  font-size: 10px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.content .TV_series .mobile_min,
+.content .Movie .mobile_min,
+.content .variety_show .mobile_min {
+  height: auto;
+  width: 100%;
+  background-color: #25a000;
+  flex-direction: row;
+  flex-wrap: wrap;
+  display: none;
+}
+.content .TV_series .mobile_min .min_box:nth-child(1),
+.content .Movie .mobile_min .min_box:nth-child(1),
+.content .variety_show .mobile_min .min_box:nth-child(1) {
+  margin-left: 6px;
+  margin-right: 17px;
+}
+.content .TV_series .mobile_min .min_box:nth-child(3),
+.content .Movie .mobile_min .min_box:nth-child(3),
+.content .variety_show .mobile_min .min_box:nth-child(3) {
+  margin-left: 6px;
+  margin-right: 17px;
+}
+.content .TV_series .mobile_min .min_box,
+.content .Movie .mobile_min .min_box,
+.content .variety_show .mobile_min .min_box {
+  height: auto;
+  width: 180px;
+  margin-bottom: 15px;
+}
+.content .TV_series .mobile_min .min_box .min_img,
+.content .Movie .mobile_min .min_box .min_img,
+.content .variety_show .mobile_min .min_box .min_img {
+  height: 112px;
+  width: 100%;
+  background-color: #1b9bff;
+  border-radius: 5px;
+  margin-bottom: 18px;
+}
+.content .TV_series .mobile_min .min_box .introduce,
+.content .Movie .mobile_min .min_box .introduce,
+.content .variety_show .mobile_min .min_box .introduce {
+  height: 35px;
+  width: 100%;
+  background-color: #ffb8fb;
+}
+.content .TV_series .mobile_min .min_box .introduce span:nth-child(1),
+.content .Movie .mobile_min .min_box .introduce span:nth-child(1),
+.content .variety_show .mobile_min .min_box .introduce span:nth-child(1) {
+  display: block;
+  font-size: 10px;
+  color: #2e3458;
+  font-weight: bold;
+}
+.content .TV_series .mobile_min .min_box .introduce span:nth-child(2),
+.content .Movie .mobile_min .min_box .introduce span:nth-child(2),
+.content .variety_show .mobile_min .min_box .introduce span:nth-child(2) {
   display: block;
   font-size: 10px;
   overflow: hidden;
@@ -154,7 +328,21 @@ body {
 footer {
   height: 250px;
   width: 100%;
-  background-color: pink;
+  background-color: #2e3458;
+  border-top: 2px solid #1b9bff;
+  margin-top: 100px;
+  color: #fff;
+}
+footer .foot_content {
+  height: 170px;
+  width: auto;
+  margin: 0 auto;
+  margin-top: 40px;
+  text-align: center;
+  font-size: 20px;
+}
+footer .foot_content p {
+  margin-bottom: 10px;
 }
 @media (max-width: 950px) {
   .banner {
@@ -179,103 +367,50 @@ footer {
     background-color: #2e3458;
     margin: 0 auto;
   }
-  .content .TV_series {
+  .content .TV_series,
+  .content .Movie,
+  .content .variety_show {
     height: auto;
     width: 100%;
     margin: 0 auto;
     background-color: #ff9e71;
   }
-  .content .TV_series .max_title {
+  .content .TV_series .max_title,
+  .content .Movie .max_title,
+  .content .variety_show .max_title {
     height: 50px;
     width: 100%;
     background-color: #71ff71;
     line-height: 50px;
   }
-  .content .TV_series .max_title a {
+  .content .TV_series .max_title a,
+  .content .Movie .max_title a,
+  .content .variety_show .max_title a {
     font-size: 25px;
     font-weight: bold;
     color: #2e3458;
   }
-  .content .TV_series .TV_cont {
+  .content .TV_series .pc_max,
+  .content .Movie .pc_max,
+  .content .variety_show .pc_max {
     display: none;
   }
-  .content .TV_series .TV_cont .TV_box {
-    height: auto;
-    width: 127px;
-    margin-left: 10px;
-    margin-bottom: 20px;
-  }
-  .content .TV_series .TV_cont .TV_box .TV_main {
-    display: block;
-    height: 168px;
-    width: 127px;
-    border-radius: 5px;
-    background-color: #0cd1d8;
-    margin-bottom: 20px;
-    transition: all 0.3s;
-    float: none;
-    z-index: 0;
-    position: relative;
-    overflow: hidden;
-  }
-  .content .TV_series .TV_cont .TV_box .TV_main:hover {
-    transform: none;
-    box-shadow: none;
-  }
-  .content .TV_series .TV_cont .TV_box .introduce {
-    height: 35px;
-    width: 127px;
-    background-color: #ffb8fb;
-    position: relative;
-    top: 0;
-    z-index: 0;
-  }
-  .content .TV_series .TV_cont .TV_box .introduce span:nth-child(1) {
-    display: block;
-    font-size: 10px;
-    font-weight: bold;
-  }
-  .content .TV_series .TV_cont .TV_box .introduce span:nth-child(2) {
-    display: block;
-    font-size: 10px;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    white-space: nowrap;
-  }
-  .content .TV_series .TV_phone {
+  .content .TV_series .mobile_max,
+  .content .Movie .mobile_max,
+  .content .variety_show .mobile_max {
     display: flex;
+  }
+  .content .TV_series .pc_min,
+  .content .Movie .pc_min,
+  .content .variety_show .pc_min {
+    display: none;
+  }
+  .content .TV_series .mobile_min,
+  .content .Movie .mobile_min,
+  .content .variety_show .mobile_min {
+    display: flex;
+  }
+  .foot_content {
+    font-size: 10px;
   }
 }
-/* nav form{
-    float: right;
-    display: flex;
-    height: 40px;
-    border-radius: 2px;
-    padding: 2px;
-    background: #2e3458;
-    min-width: 18%!important;
-    border: 1px solid #fff;
-  }
-  nav form button{
-    padding: 0 15px;
-    background: #ff3d00;
-    border: none;
-    cursor: pointer;
-    font-size: 17px;
-    color: #fff;
-    border-radius: 2px;
-  }
-  nav form button img{
-    width: 25px;
-    height: 25px;
-  }
-  nav form .search_data{
-    height: 100%;
-    width: 100%;
-    padding: 0 10px;
-    color: #fff;
-    font-size: 17px;
-    font-weight: 500;
-    background: none;
-    border: none;
-  } */

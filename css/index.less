@@ -11,84 +11,6 @@ body {
     // background-color: #333;
 }
 
-// 设置导航栏
-// nav {
-//     background: #2e3458;
-//     height: 80px;
-//     width: 100%;
-//     position: fixed;
-//     top: 0;
-//     z-index: 99;
-//     /* display: flex;
-//         flex-wrap: wrap;
-//         align-items: center;
-//         justify-content: space-between; */
-
-//     ul {
-//         float: right;
-//         margin-right: 20px;
-
-//         li {
-//             display: inline-block;
-//             list-style: none;
-//             line-height: 80px;
-//             margin: 0 5px;
-
-//             a {
-//                 color: #fff;
-//                 font-size: 18px;
-//                 padding: 7px 13px;
-//                 border-radius: 3px;
-//                 text-transform: uppercase;
-//             }
-
-//         }
-//     }
-
-//     // 超链接伪类
-//     a.action,
-//     a:hover {
-//         background: #1b9bff;
-//         transition: .5s;
-//     }
-
-//     // 按钮
-//     .checkbtn {
-//         float: right;
-//         line-height: 100px;
-//         margin-right: 40px;
-//         cursor: pointer;
-//         display: none;
-//     }
-
-//     #check {
-//         display: none;
-//     }
-
-//     // 列表按钮
-//     .checkbtn_img {
-//         width: 35px;
-//         height: 35px;
-//     }
-
-// }
-
-// logo
-// label {
-//     .logo {
-//         color: #fff;
-//         font-size: 30px;
-//         line-height: 80px;
-//         padding: 0 100px;
-//         font-weight: bold;
-//     }
-
-//     .logo_img {
-//         width: 113px;
-//         margin-left: 50px;
-//     }
-// }
-
 // 轮播图
 .banner {
     height: 630px;
@@ -100,64 +22,6 @@ body {
     .swiper {
         height: 630px;
         width: 100%;
-
-        // .banner_img {
-        //     height: 100%;
-        //     width: 100%;
-        //     background: url("../images/swp1.jpg") no-repeat;
-        //     background-size: 110% 110%;
-        //     background-position: 50% 50%;
-        // }
-
-        // .swiper-slide:nth-child(1) {
-        //     .banner_img {
-        //         height: 100%;
-        //         width: 100%;
-        //         background: url("../images/swp1.jpg") no-repeat;
-        //         background-size: 110% 110%;
-        //         background-position: 50% 50%;
-        //     }
-        // }
-
-        // .swiper-slide:nth-child(2) {
-        //     .banner_img {
-        //         height: 100%;
-        //         width: 100%;
-        //         background: url("../images/swp2.jpg") no-repeat;
-        //         background-size: 100% 100%;
-        //         background-position: 50% 50%;
-        //     }
-        // }
-
-        // .swiper-slide:nth-child(3) {
-        //     .banner_img {
-        //         height: 100%;
-        //         width: 100%;
-        //         background: url("../images/swp3.jpg") no-repeat;
-        //         background-size: 100% 100%;
-        //         background-position: 50% 50%;
-        //     }
-        // }
-
-        // .swiper-slide:nth-child(4) {
-        //     .banner_img {
-        //         height: 100%;
-        //         width: 100%;
-        //         background: url("../images/swp4.jpg") no-repeat;
-        //         background-size: 100% 100%;
-        //         background-position: 50% 50%;
-        //     }
-        // }
-
-        // .swiper-slide:nth-child(5) {
-        //     .banner_img {
-        //         height: 100%;
-        //         width: 100%;
-        //         background: url("../images/swp5.jpg") no-repeat;
-        //         background-size: 100% 100%;
-        //         background-position: 50% 50%;
-        //     }
-        // }
 
         img {
             height: 630px;
@@ -173,7 +37,9 @@ body {
     background-color: #2e3458;
     margin: 0 auto;
 
-    .TV_series {
+    .TV_series,
+    .Movie,
+    .variety_show {
         height: auto;
         width: 100%;
         margin: 0 auto;
@@ -197,8 +63,8 @@ body {
             }
         }
 
-        // pc显示
-        .TV_cont {
+        // pc大方块显示
+        .pc_max {
             height: 760px;
             width: 100%;
             background-color: #25a000;
@@ -206,21 +72,21 @@ body {
             flex-direction: row;
             flex-wrap: wrap;
 
-            .TV_box:nth-child(1) {
+            .pc_box:nth-child(1) {
                 margin-left: 0;
             }
 
-            .TV_box:nth-child(8) {
+            .pc_box:nth-child(8) {
                 margin-left: 0;
             }
 
-            .TV_box {
+            .pc_box {
                 height: 345px;
                 width: 198px;
                 margin-left: 20px;
                 margin-bottom: 10px;
 
-                .TV_main {
+                .pc_main {
                     display: block;
                     height: 277px;
                     width: 198px;
@@ -228,18 +94,17 @@ body {
                     background-color: #0cd1d8;
                     margin-bottom: 20px;
                     transition: all .3s;
-                    // float: right;
                     z-index: 2;
-                    // position: relative;
                     overflow: hidden;
 
-                    img {
-                        height: 100%;
-                        width: 100%;
+                    .back_img {
+                        // background: url();
+                        background-size: 50% 50%;
+                        background-position: 50% 50%;
                     }
                 }
 
-                .TV_main:hover {
+                .pc_main:hover {
                     transform: scale(1.2);
                     box-shadow: 0 15px 30px rgba(0, 0, 0, .1);
                 }
@@ -248,11 +113,7 @@ body {
                     height: 45px;
                     width: 198px;
                     background-color: #ffb8fb;
-                    // position: relative;
-                    // top: 295px;
                     z-index: 1;
-                    // display: flex;
-                    // flex-direction: column;
 
                     span:nth-child(1) {
                         display: block;
@@ -276,8 +137,8 @@ body {
             }
         }
 
-        // 移动端显示
-        .TV_phone {
+        // 大方块移动端显示
+        .mobile_max {
             height: auto;
             width: 100%;
             background-color: #25a000;
@@ -285,14 +146,14 @@ body {
             flex-wrap: wrap;
             display: none;
 
-            .TV_box {
+            .pc_box {
                 height: auto;
                 width: 120px;
                 margin-left: 5px;
                 margin-bottom: 20px;
                 flex: 1;
 
-                .TV_main {
+                .pc_main {
                     display: block;
                     height: 165px;
                     width: 120px;
@@ -301,11 +162,129 @@ body {
                     margin-bottom: 20px;
                     transition: all .3s;
                     overflow: hidden;
+                    // background: url();
+                    background-size: 50% 50%;
+                    background-position: 50% 50%;
                 }
 
                 .introduce {
                     height: 35px;
                     width: 120px;
+                    background-color: #ffb8fb;
+
+                    span:nth-child(1) {
+                        display: block;
+                        font-size: 10px;
+                        color: #2e3458;
+                        font-weight: bold;
+                    }
+
+                    span:nth-child(2) {
+                        display: block;
+                        font-size: 10px;
+                        overflow: hidden;
+                        text-overflow: ellipsis;
+                        white-space: nowrap;
+                    }
+                }
+            }
+        }
+
+        // 小方块pc
+        .pc_min {
+            height: 400px;
+            width: 100%;
+            background-color: #25a000;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+
+            .min_box:nth-child(1) {
+                margin-left: 0px;
+            }
+
+            .min_box:nth-child(8) {
+                margin-left: 0px;
+            }
+
+            .min_box {
+                height: 164px;
+                width: 198px;
+                margin-left: 20px;
+                margin-bottom: 10px;
+
+                .min_img {
+                    height: 111px;
+                    width: 100%;
+                    background-color: #1b9bff;
+                    transition: all .5s;
+                    border-radius: 5px;
+                    margin-bottom: 18px;
+                }
+
+                .min_img:hover {
+                    transform: scale(1.2);
+                    box-shadow: 0 15px 30px rgba(0, 0, 0, .1);
+                }
+
+                .introduce {
+                    height: 45px;
+                    width: 100%;
+                    background-color: #ffb8fb;
+
+                    span:nth-child(1) {
+                        display: block;
+                        font-size: 15px;
+                        color: #2e3458;
+                        font-weight: bold;
+                    }
+
+                    span:nth-child(2) {
+                        display: block;
+                        font-size: 10px;
+                        overflow: hidden;
+                        text-overflow: ellipsis;
+                        white-space: nowrap;
+                    }
+                }
+            }
+        }
+
+        // 小方块移动端
+        .mobile_min {
+            height: auto;
+            width: 100%;
+            background-color: #25a000;
+            flex-direction: row;
+            flex-wrap: wrap;
+            display: none;
+
+            .min_box:nth-child(1) {
+                margin-left: 6px;
+                margin-right: 17px;
+            }
+
+            .min_box:nth-child(3) {
+                margin-left: 6px;
+                margin-right: 17px;
+            }
+
+            .min_box {
+                height: auto;
+                width: 180px;
+                margin-bottom: 15px;
+
+                .min_img {
+                    height: 112px;
+                    width: 100%;
+                    background-color: #1b9bff;
+                    border-radius: 5px;
+                    margin-bottom: 18px;
+                }
+
+                .introduce {
+                    height: 35px;
+                    width: 100%;
                     background-color: #ffb8fb;
 
                     span:nth-child(1) {
@@ -332,68 +311,28 @@ body {
 footer {
     height: 250px;
     width: 100%;
-    background-color: pink;
+    background-color: #2e3458;
+    border-top: 2px solid #1b9bff;
+    margin-top: 100px;
+    color: #fff;
+
+    .foot_content {
+        height: 170px;
+        width: auto;
+        margin: 0 auto;
+        margin-top: 40px;
+        // background: #71ff71;
+        text-align: center;
+        font-size: 20px;
+
+        p {
+            margin-bottom: 10px;
+        }
+    }
 }
-
-// 导航栏媒体查询 小于950px一律按移动端比例显示
-//     nav {
-//         ul {
-//             li {
-//                 a {
-//                     font-size: 16px;
-//                 }
-//             }
-//         }
-//     }
-
 
 // 媒体查询 自适应
 @media(max-width:950px) {
-    // label {
-
-    //     .logo {
-    //         font-size: 30px;
-    //         padding-left: 50px;
-    //     }
-
-    // }
-
-    // nav {
-    //     ul {
-    //         position: fixed;
-    //         width: 100%;
-    //         height: 70vh;
-    //         background: #2c3e50;
-    //         top: 80px;
-    //         left: -100%;
-    //         text-align: center;
-    //         transition: all .5s;
-
-    //         li {
-    //             display: block;
-
-    //             a {
-    //                 font-size: 20px;
-    //             }
-    //         }
-
-    //     }
-
-    //     a.action,
-    //     a:hover {
-    //         background: none;
-    //         color: #6dadee;
-    //     }
-
-    //     .checkbtn {
-    //         display: block !important;
-    //     }
-
-    //     #check:checked~ul {
-    //         left: 0;
-    //     }
-    // }
-
     .banner {
         height: 240px;
 
@@ -422,7 +361,9 @@ footer {
         background-color: #2e3458;
         margin: 0 auto;
 
-        .TV_series {
+        .TV_series,
+        .Movie,
+        .variety_show {
             height: auto;
             width: 100%;
             margin: 0 auto;
@@ -441,144 +382,25 @@ footer {
                 }
             }
 
-            .TV_cont {
-                // height: auto;
-                // width: 100%;
-                // background-color: #25a000;
-                // display: flex;
-                // flex-direction: row;
-                // flex-wrap: wrap;
+            .pc_max {
                 display: none;
-
-                // .TV_box:nth-child(1) {
-                //     margin-left: 6px;
-                // }
-
-                // .TV_box:nth-child(4) {
-                //     margin-left: 6px;
-                // }
-
-                // .TV_box:nth-child(7) {
-                //     display: none;
-                // }
-
-                // .TV_box:nth-child(8) {
-                //     display: none;
-                // }
-
-                // .TV_box:nth-child(9) {
-                //     display: none;
-                // }
-
-                // .TV_box:nth-child(10) {
-                //     display: none;
-                // }
-
-                // .TV_box:nth-child(11) {
-                //     display: none;
-                // }
-
-                // .TV_box:nth-child(12) {
-                //     display: none;
-                // }
-
-                // .TV_box:nth-child(13) {
-                //     display: none;
-                // }
-
-                // .TV_box:nth-child(14) {
-                //     display: none;
-                // }
-
-                .TV_box {
-                    height: auto;
-                    width: 127px;
-                    margin-left: 10px;
-                    margin-bottom: 20px;
-
-                    .TV_main {
-                        display: block;
-                        height: 168px;
-                        width: 127px;
-                        border-radius: 5px;
-                        background-color: #0cd1d8;
-                        margin-bottom: 20px;
-                        transition: all .3s;
-                        float: none;
-                        z-index: 0;
-                        position: relative;
-                        overflow: hidden;
-                    }
-
-                    .TV_main:hover {
-                        // height: 333px;
-                        // width: 238px;
-                        transform: none;
-                        box-shadow: none;
-                    }
-
-                    .introduce {
-                        height: 35px;
-                        width: 127px;
-                        background-color: #ffb8fb;
-                        position: relative;
-                        top: 0;
-                        z-index: 0;
-
-                        span:nth-child(1) {
-                            display: block;
-                            font-size: 10px;
-                            font-weight: bold;
-                        }
-
-                        span:nth-child(2) {
-                            display: block;
-                            font-size: 10px;
-                            overflow: hidden;
-                            text-overflow: ellipsis;
-                            white-space: nowrap;
-                        }
-                    }
-                }
             }
 
-            .TV_phone {
+            .mobile_max {
+                display: flex;
+            }
+
+            .pc_min {
+                display: none;
+            }
+
+            .mobile_min {
                 display: flex;
             }
         }
     }
-}
 
-/* nav form{
-    float: right;
-    display: flex;
-    height: 40px;
-    border-radius: 2px;
-    padding: 2px;
-    background: #2e3458;
-    min-width: 18%!important;
-    border: 1px solid #fff;
-  }
-  nav form button{
-    padding: 0 15px;
-    background: #ff3d00;
-    border: none;
-    cursor: pointer;
-    font-size: 17px;
-    color: #fff;
-    border-radius: 2px;
-  }
-  nav form button img{
-    width: 25px;
-    height: 25px;
-  }
-  nav form .search_data{
-    height: 100%;
-    width: 100%;
-    padding: 0 10px;
-    color: #fff;
-    font-size: 17px;
-    font-weight: 500;
-    background: none;
-    border: none;
-  } */
+    .foot_content {
+        font-size: 10px;
+    }
+}
