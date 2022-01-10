@@ -128,7 +128,6 @@ body {
 .content .Documentary .pc_max .pc_box .introduce {
   height: 45px;
   width: 198px;
-  background-color: #ffb8fb;
   z-index: 1;
 }
 .content .TV_series .pc_max .pc_box .introduce span:nth-child(1),
@@ -138,21 +137,26 @@ body {
   display: block;
   font-size: 15px;
   font-weight: bold;
-  color: #2e3458;
+  color: #fff;
   margin-bottom: 5px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
 .content .TV_series .pc_max .pc_box .introduce a:hover span:nth-child(1),
 .content .Movie .pc_max .pc_box .introduce a:hover span:nth-child(1),
 .content .variety_show .pc_max .pc_box .introduce a:hover span:nth-child(1),
 .content .Documentary .pc_max .pc_box .introduce a:hover span:nth-child(1) {
-  color: #0cd1d8;
+  color: #1b9bff;
 }
 .content .TV_series .pc_max .pc_box .introduce span:nth-child(2),
 .content .Movie .pc_max .pc_box .introduce span:nth-child(2),
 .content .variety_show .pc_max .pc_box .introduce span:nth-child(2),
 .content .Documentary .pc_max .pc_box .introduce span:nth-child(2) {
   display: block;
-  font-size: 10px;
+  color: #eee;
+  font-size: 13px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
 .content .TV_series .mobile_max,
 .content .Movie .mobile_max,
@@ -195,22 +199,24 @@ body {
 .content .Documentary .mobile_max .pc_box .introduce {
   height: 35px;
   width: 120px;
-  background-color: #ffb8fb;
 }
 .content .TV_series .mobile_max .pc_box .introduce span:nth-child(1),
 .content .Movie .mobile_max .pc_box .introduce span:nth-child(1),
 .content .variety_show .mobile_max .pc_box .introduce span:nth-child(1),
 .content .Documentary .mobile_max .pc_box .introduce span:nth-child(1) {
   display: block;
-  font-size: 10px;
-  color: #2e3458;
+  font-size: 12px;
+  color: #FFF;
   font-weight: bold;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
 .content .TV_series .mobile_max .pc_box .introduce span:nth-child(2),
 .content .Movie .mobile_max .pc_box .introduce span:nth-child(2),
 .content .variety_show .mobile_max .pc_box .introduce span:nth-child(2),
 .content .Documentary .mobile_max .pc_box .introduce span:nth-child(2) {
   display: block;
+  color: #eee;
   font-size: 10px;
   overflow: hidden;
   text-overflow: ellipsis;
@@ -271,7 +277,6 @@ body {
 .content .Documentary .pc_min .min_box .introduce {
   height: 45px;
   width: 100%;
-  background-color: #ffb8fb;
 }
 .content .TV_series .pc_min .min_box .introduce span:nth-child(1),
 .content .Movie .pc_min .min_box .introduce span:nth-child(1),
@@ -279,8 +284,17 @@ body {
 .content .Documentary .pc_min .min_box .introduce span:nth-child(1) {
   display: block;
   font-size: 15px;
-  color: #2e3458;
+  color: #FFF;
   font-weight: bold;
+  margin-bottom: 5px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.content .TV_series .pc_min .min_box .introduce a:hover span:nth-child(1),
+.content .Movie .pc_min .min_box .introduce a:hover span:nth-child(1),
+.content .variety_show .pc_min .min_box .introduce a:hover span:nth-child(1),
+.content .Documentary .pc_min .min_box .introduce a:hover span:nth-child(1) {
+  color: #1b9bff;
 }
 .content .TV_series .pc_min .min_box .introduce span:nth-child(2),
 .content .Movie .pc_min .min_box .introduce span:nth-child(2),
@@ -288,6 +302,7 @@ body {
 .content .Documentary .pc_min .min_box .introduce span:nth-child(2) {
   display: block;
   font-size: 10px;
+  color: #eee;
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
@@ -298,7 +313,6 @@ body {
 .content .Documentary .mobile_min {
   height: auto;
   width: 100%;
-  background-color: #25a000;
   flex-direction: row;
   flex-wrap: wrap;
   display: none;
@@ -341,7 +355,6 @@ body {
 .content .Documentary .mobile_min .min_box .introduce {
   height: 35px;
   width: 100%;
-  background-color: #ffb8fb;
 }
 .content .TV_series .mobile_min .min_box .introduce span:nth-child(1),
 .content .Movie .mobile_min .min_box .introduce span:nth-child(1),
@@ -349,8 +362,11 @@ body {
 .content .Documentary .mobile_min .min_box .introduce span:nth-child(1) {
   display: block;
   font-size: 10px;
-  color: #2e3458;
+  color: #FFF;
   font-weight: bold;
+  margin-bottom: 5px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
 .content .TV_series .mobile_min .min_box .introduce span:nth-child(2),
 .content .Movie .mobile_min .min_box .introduce span:nth-child(2),
@@ -358,6 +374,7 @@ body {
 .content .Documentary .mobile_min .min_box .introduce span:nth-child(2) {
   display: block;
   font-size: 10px;
+  color: #eee;
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
@@ -411,7 +428,6 @@ footer .foot_content p {
     height: auto;
     width: 100%;
     margin: 0 auto;
-    background-color: #ff9e71;
   }
   .content .TV_series .max_title,
   .content .Movie .max_title,
@@ -419,16 +435,17 @@ footer .foot_content p {
   .content .Documentary .max_title {
     height: 50px;
     width: 100%;
-    background-color: #71ff71;
     line-height: 50px;
+    padding-top: 0px;
   }
   .content .TV_series .max_title a,
   .content .Movie .max_title a,
   .content .variety_show .max_title a,
   .content .Documentary .max_title a {
-    font-size: 25px;
+    font-size: 20px;
     font-weight: bold;
-    color: #2e3458;
+    color: #FFF;
+    padding-left: 10px;
   }
   .content .TV_series .pc_max,
   .content .Movie .pc_max,
