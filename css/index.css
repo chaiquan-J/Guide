@@ -7,6 +7,7 @@
 }
 body {
   font-family: montserrat;
+  background-color: #2e3458;
 }
 .banner {
   height: 630px;
@@ -28,58 +29,66 @@ body {
   background-color: #2e3458;
   margin: 0 auto;
 }
+.content .Documentary .pc_max {
+  height: 350px !important;
+}
 .content .TV_series,
 .content .Movie,
-.content .variety_show {
+.content .variety_show,
+.content .Documentary {
   height: auto;
   width: 100%;
   margin: 0 auto;
-  background-color: #ff9e71;
 }
 .content .TV_series .max_title,
 .content .Movie .max_title,
-.content .variety_show .max_title {
+.content .variety_show .max_title,
+.content .Documentary .max_title {
   height: 70px;
   width: 100%;
-  background-color: #71ff71;
-  line-height: 70px;
+  padding-top: 12px;
 }
 .content .TV_series .max_title a,
 .content .Movie .max_title a,
-.content .variety_show .max_title a {
+.content .variety_show .max_title a,
+.content .Documentary .max_title a {
   font-size: 30px;
   font-weight: 550;
-  color: #2e3458;
-  margin-left: 10px;
+  color: #FFF;
+  transition: all 0.3s;
 }
 .content .TV_series .max_title a:hover,
 .content .Movie .max_title a:hover,
-.content .variety_show .max_title a:hover {
+.content .variety_show .max_title a:hover,
+.content .Documentary .max_title a:hover {
   color: #1b9bff;
 }
 .content .TV_series .pc_max,
 .content .Movie .pc_max,
-.content .variety_show .pc_max {
+.content .variety_show .pc_max,
+.content .Documentary .pc_max {
   height: 760px;
   width: 100%;
-  background-color: #25a000;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
 }
 .content .TV_series .pc_max .pc_box:nth-child(1),
 .content .Movie .pc_max .pc_box:nth-child(1),
-.content .variety_show .pc_max .pc_box:nth-child(1) {
+.content .variety_show .pc_max .pc_box:nth-child(1),
+.content .Documentary .pc_max .pc_box:nth-child(1) {
   margin-left: 0;
 }
 .content .TV_series .pc_max .pc_box:nth-child(8),
 .content .Movie .pc_max .pc_box:nth-child(8),
-.content .variety_show .pc_max .pc_box:nth-child(8) {
+.content .variety_show .pc_max .pc_box:nth-child(8),
+.content .Documentary .pc_max .pc_box:nth-child(8) {
   margin-left: 0;
 }
 .content .TV_series .pc_max .pc_box,
 .content .Movie .pc_max .pc_box,
-.content .variety_show .pc_max .pc_box {
+.content .variety_show .pc_max .pc_box,
+.content .Documentary .pc_max .pc_box {
   height: 345px;
   width: 198px;
   margin-left: 20px;
@@ -87,7 +96,8 @@ body {
 }
 .content .TV_series .pc_max .pc_box .pc_main,
 .content .Movie .pc_max .pc_box .pc_main,
-.content .variety_show .pc_max .pc_box .pc_main {
+.content .variety_show .pc_max .pc_box .pc_main,
+.content .Documentary .pc_max .pc_box .pc_main {
   display: block;
   height: 277px;
   width: 198px;
@@ -100,19 +110,22 @@ body {
 }
 .content .TV_series .pc_max .pc_box .pc_main .back_img,
 .content .Movie .pc_max .pc_box .pc_main .back_img,
-.content .variety_show .pc_max .pc_box .pc_main .back_img {
+.content .variety_show .pc_max .pc_box .pc_main .back_img,
+.content .Documentary .pc_max .pc_box .pc_main .back_img {
   background-size: 50% 50%;
   background-position: 50% 50%;
 }
 .content .TV_series .pc_max .pc_box .pc_main:hover,
 .content .Movie .pc_max .pc_box .pc_main:hover,
-.content .variety_show .pc_max .pc_box .pc_main:hover {
+.content .variety_show .pc_max .pc_box .pc_main:hover,
+.content .Documentary .pc_max .pc_box .pc_main:hover {
   transform: scale(1.2);
   box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
 }
 .content .TV_series .pc_max .pc_box .introduce,
 .content .Movie .pc_max .pc_box .introduce,
-.content .variety_show .pc_max .pc_box .introduce {
+.content .variety_show .pc_max .pc_box .introduce,
+.content .Documentary .pc_max .pc_box .introduce {
   height: 45px;
   width: 198px;
   background-color: #ffb8fb;
@@ -120,7 +133,8 @@ body {
 }
 .content .TV_series .pc_max .pc_box .introduce span:nth-child(1),
 .content .Movie .pc_max .pc_box .introduce span:nth-child(1),
-.content .variety_show .pc_max .pc_box .introduce span:nth-child(1) {
+.content .variety_show .pc_max .pc_box .introduce span:nth-child(1),
+.content .Documentary .pc_max .pc_box .introduce span:nth-child(1) {
   display: block;
   font-size: 15px;
   font-weight: bold;
@@ -129,28 +143,31 @@ body {
 }
 .content .TV_series .pc_max .pc_box .introduce a:hover span:nth-child(1),
 .content .Movie .pc_max .pc_box .introduce a:hover span:nth-child(1),
-.content .variety_show .pc_max .pc_box .introduce a:hover span:nth-child(1) {
+.content .variety_show .pc_max .pc_box .introduce a:hover span:nth-child(1),
+.content .Documentary .pc_max .pc_box .introduce a:hover span:nth-child(1) {
   color: #0cd1d8;
 }
 .content .TV_series .pc_max .pc_box .introduce span:nth-child(2),
 .content .Movie .pc_max .pc_box .introduce span:nth-child(2),
-.content .variety_show .pc_max .pc_box .introduce span:nth-child(2) {
+.content .variety_show .pc_max .pc_box .introduce span:nth-child(2),
+.content .Documentary .pc_max .pc_box .introduce span:nth-child(2) {
   display: block;
   font-size: 10px;
 }
 .content .TV_series .mobile_max,
 .content .Movie .mobile_max,
-.content .variety_show .mobile_max {
+.content .variety_show .mobile_max,
+.content .Documentary .mobile_max {
   height: auto;
   width: 100%;
-  background-color: #25a000;
   flex-direction: row;
   flex-wrap: wrap;
   display: none;
 }
 .content .TV_series .mobile_max .pc_box,
 .content .Movie .mobile_max .pc_box,
-.content .variety_show .mobile_max .pc_box {
+.content .variety_show .mobile_max .pc_box,
+.content .Documentary .mobile_max .pc_box {
   height: auto;
   width: 120px;
   margin-left: 5px;
@@ -159,7 +176,8 @@ body {
 }
 .content .TV_series .mobile_max .pc_box .pc_main,
 .content .Movie .mobile_max .pc_box .pc_main,
-.content .variety_show .mobile_max .pc_box .pc_main {
+.content .variety_show .mobile_max .pc_box .pc_main,
+.content .Documentary .mobile_max .pc_box .pc_main {
   display: block;
   height: 165px;
   width: 120px;
@@ -173,14 +191,16 @@ body {
 }
 .content .TV_series .mobile_max .pc_box .introduce,
 .content .Movie .mobile_max .pc_box .introduce,
-.content .variety_show .mobile_max .pc_box .introduce {
+.content .variety_show .mobile_max .pc_box .introduce,
+.content .Documentary .mobile_max .pc_box .introduce {
   height: 35px;
   width: 120px;
   background-color: #ffb8fb;
 }
 .content .TV_series .mobile_max .pc_box .introduce span:nth-child(1),
 .content .Movie .mobile_max .pc_box .introduce span:nth-child(1),
-.content .variety_show .mobile_max .pc_box .introduce span:nth-child(1) {
+.content .variety_show .mobile_max .pc_box .introduce span:nth-child(1),
+.content .Documentary .mobile_max .pc_box .introduce span:nth-child(1) {
   display: block;
   font-size: 10px;
   color: #2e3458;
@@ -188,7 +208,8 @@ body {
 }
 .content .TV_series .mobile_max .pc_box .introduce span:nth-child(2),
 .content .Movie .mobile_max .pc_box .introduce span:nth-child(2),
-.content .variety_show .mobile_max .pc_box .introduce span:nth-child(2) {
+.content .variety_show .mobile_max .pc_box .introduce span:nth-child(2),
+.content .Documentary .mobile_max .pc_box .introduce span:nth-child(2) {
   display: block;
   font-size: 10px;
   overflow: hidden;
@@ -197,27 +218,30 @@ body {
 }
 .content .TV_series .pc_min,
 .content .Movie .pc_min,
-.content .variety_show .pc_min {
+.content .variety_show .pc_min,
+.content .Documentary .pc_min {
   height: 400px;
   width: 100%;
-  background-color: #25a000;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
 }
 .content .TV_series .pc_min .min_box:nth-child(1),
 .content .Movie .pc_min .min_box:nth-child(1),
-.content .variety_show .pc_min .min_box:nth-child(1) {
+.content .variety_show .pc_min .min_box:nth-child(1),
+.content .Documentary .pc_min .min_box:nth-child(1) {
   margin-left: 0px;
 }
 .content .TV_series .pc_min .min_box:nth-child(8),
 .content .Movie .pc_min .min_box:nth-child(8),
-.content .variety_show .pc_min .min_box:nth-child(8) {
+.content .variety_show .pc_min .min_box:nth-child(8),
+.content .Documentary .pc_min .min_box:nth-child(8) {
   margin-left: 0px;
 }
 .content .TV_series .pc_min .min_box,
 .content .Movie .pc_min .min_box,
-.content .variety_show .pc_min .min_box {
+.content .variety_show .pc_min .min_box,
+.content .Documentary .pc_min .min_box {
   height: 164px;
   width: 198px;
   margin-left: 20px;
@@ -225,7 +249,8 @@ body {
 }
 .content .TV_series .pc_min .min_box .min_img,
 .content .Movie .pc_min .min_box .min_img,
-.content .variety_show .pc_min .min_box .min_img {
+.content .variety_show .pc_min .min_box .min_img,
+.content .Documentary .pc_min .min_box .min_img {
   height: 111px;
   width: 100%;
   background-color: #1b9bff;
@@ -235,20 +260,23 @@ body {
 }
 .content .TV_series .pc_min .min_box .min_img:hover,
 .content .Movie .pc_min .min_box .min_img:hover,
-.content .variety_show .pc_min .min_box .min_img:hover {
+.content .variety_show .pc_min .min_box .min_img:hover,
+.content .Documentary .pc_min .min_box .min_img:hover {
   transform: scale(1.2);
   box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
 }
 .content .TV_series .pc_min .min_box .introduce,
 .content .Movie .pc_min .min_box .introduce,
-.content .variety_show .pc_min .min_box .introduce {
+.content .variety_show .pc_min .min_box .introduce,
+.content .Documentary .pc_min .min_box .introduce {
   height: 45px;
   width: 100%;
   background-color: #ffb8fb;
 }
 .content .TV_series .pc_min .min_box .introduce span:nth-child(1),
 .content .Movie .pc_min .min_box .introduce span:nth-child(1),
-.content .variety_show .pc_min .min_box .introduce span:nth-child(1) {
+.content .variety_show .pc_min .min_box .introduce span:nth-child(1),
+.content .Documentary .pc_min .min_box .introduce span:nth-child(1) {
   display: block;
   font-size: 15px;
   color: #2e3458;
@@ -256,7 +284,8 @@ body {
 }
 .content .TV_series .pc_min .min_box .introduce span:nth-child(2),
 .content .Movie .pc_min .min_box .introduce span:nth-child(2),
-.content .variety_show .pc_min .min_box .introduce span:nth-child(2) {
+.content .variety_show .pc_min .min_box .introduce span:nth-child(2),
+.content .Documentary .pc_min .min_box .introduce span:nth-child(2) {
   display: block;
   font-size: 10px;
   overflow: hidden;
@@ -265,7 +294,8 @@ body {
 }
 .content .TV_series .mobile_min,
 .content .Movie .mobile_min,
-.content .variety_show .mobile_min {
+.content .variety_show .mobile_min,
+.content .Documentary .mobile_min {
   height: auto;
   width: 100%;
   background-color: #25a000;
@@ -275,26 +305,30 @@ body {
 }
 .content .TV_series .mobile_min .min_box:nth-child(1),
 .content .Movie .mobile_min .min_box:nth-child(1),
-.content .variety_show .mobile_min .min_box:nth-child(1) {
+.content .variety_show .mobile_min .min_box:nth-child(1),
+.content .Documentary .mobile_min .min_box:nth-child(1) {
   margin-left: 6px;
   margin-right: 17px;
 }
 .content .TV_series .mobile_min .min_box:nth-child(3),
 .content .Movie .mobile_min .min_box:nth-child(3),
-.content .variety_show .mobile_min .min_box:nth-child(3) {
+.content .variety_show .mobile_min .min_box:nth-child(3),
+.content .Documentary .mobile_min .min_box:nth-child(3) {
   margin-left: 6px;
   margin-right: 17px;
 }
 .content .TV_series .mobile_min .min_box,
 .content .Movie .mobile_min .min_box,
-.content .variety_show .mobile_min .min_box {
+.content .variety_show .mobile_min .min_box,
+.content .Documentary .mobile_min .min_box {
   height: auto;
   width: 180px;
   margin-bottom: 15px;
 }
 .content .TV_series .mobile_min .min_box .min_img,
 .content .Movie .mobile_min .min_box .min_img,
-.content .variety_show .mobile_min .min_box .min_img {
+.content .variety_show .mobile_min .min_box .min_img,
+.content .Documentary .mobile_min .min_box .min_img {
   height: 112px;
   width: 100%;
   background-color: #1b9bff;
@@ -303,14 +337,16 @@ body {
 }
 .content .TV_series .mobile_min .min_box .introduce,
 .content .Movie .mobile_min .min_box .introduce,
-.content .variety_show .mobile_min .min_box .introduce {
+.content .variety_show .mobile_min .min_box .introduce,
+.content .Documentary .mobile_min .min_box .introduce {
   height: 35px;
   width: 100%;
   background-color: #ffb8fb;
 }
 .content .TV_series .mobile_min .min_box .introduce span:nth-child(1),
 .content .Movie .mobile_min .min_box .introduce span:nth-child(1),
-.content .variety_show .mobile_min .min_box .introduce span:nth-child(1) {
+.content .variety_show .mobile_min .min_box .introduce span:nth-child(1),
+.content .Documentary .mobile_min .min_box .introduce span:nth-child(1) {
   display: block;
   font-size: 10px;
   color: #2e3458;
@@ -318,7 +354,8 @@ body {
 }
 .content .TV_series .mobile_min .min_box .introduce span:nth-child(2),
 .content .Movie .mobile_min .min_box .introduce span:nth-child(2),
-.content .variety_show .mobile_min .min_box .introduce span:nth-child(2) {
+.content .variety_show .mobile_min .min_box .introduce span:nth-child(2),
+.content .Documentary .mobile_min .min_box .introduce span:nth-child(2) {
   display: block;
   font-size: 10px;
   overflow: hidden;
@@ -346,14 +383,14 @@ footer .foot_content p {
 }
 @media (max-width: 950px) {
   .banner {
-    height: 240px;
+    height: 165px;
   }
   .banner .swiper {
-    height: 240px;
+    height: 165px;
   }
   .banner .swiper img {
-    height: 240px;
-    width: 130%;
+    height: 165px;
+    width: 100%;
   }
   .banner .swiper .swiper-button-prev {
     display: none;
@@ -369,7 +406,8 @@ footer .foot_content p {
   }
   .content .TV_series,
   .content .Movie,
-  .content .variety_show {
+  .content .variety_show,
+  .content .Documentary {
     height: auto;
     width: 100%;
     margin: 0 auto;
@@ -377,7 +415,8 @@ footer .foot_content p {
   }
   .content .TV_series .max_title,
   .content .Movie .max_title,
-  .content .variety_show .max_title {
+  .content .variety_show .max_title,
+  .content .Documentary .max_title {
     height: 50px;
     width: 100%;
     background-color: #71ff71;
@@ -385,32 +424,42 @@ footer .foot_content p {
   }
   .content .TV_series .max_title a,
   .content .Movie .max_title a,
-  .content .variety_show .max_title a {
+  .content .variety_show .max_title a,
+  .content .Documentary .max_title a {
     font-size: 25px;
     font-weight: bold;
     color: #2e3458;
   }
   .content .TV_series .pc_max,
   .content .Movie .pc_max,
-  .content .variety_show .pc_max {
+  .content .variety_show .pc_max,
+  .content .Documentary .pc_max {
     display: none;
   }
   .content .TV_series .mobile_max,
   .content .Movie .mobile_max,
-  .content .variety_show .mobile_max {
+  .content .variety_show .mobile_max,
+  .content .Documentary .mobile_max {
     display: flex;
   }
   .content .TV_series .pc_min,
   .content .Movie .pc_min,
-  .content .variety_show .pc_min {
+  .content .variety_show .pc_min,
+  .content .Documentary .pc_min {
     display: none;
   }
   .content .TV_series .mobile_min,
   .content .Movie .mobile_min,
-  .content .variety_show .mobile_min {
+  .content .variety_show .mobile_min,
+  .content .Documentary .mobile_min {
     display: flex;
   }
-  .foot_content {
+  footer {
+    height: 145px;
+  }
+  footer .foot_content {
+    height: auto;
+    margin-top: 13px;
     font-size: 10px;
   }
 }

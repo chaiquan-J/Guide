@@ -8,7 +8,7 @@
 
 body {
     font-family: montserrat;
-    // background-color: #333;
+    background-color: #2e3458;
 }
 
 // 轮播图
@@ -37,25 +37,31 @@ body {
     background-color: #2e3458;
     margin: 0 auto;
 
+    .Documentary {
+        .pc_max {
+            height: 350px !important;
+        }
+    }
+
     .TV_series,
     .Movie,
-    .variety_show {
+    .variety_show,
+    .Documentary {
         height: auto;
         width: 100%;
         margin: 0 auto;
-        background-color: #ff9e71;
+        // background-color: #ff9e71;
 
         .max_title {
             height: 70px;
             width: 100%;
-            background-color: #71ff71;
-            line-height: 70px;
+            padding-top: 12px;
 
             a {
                 font-size: 30px;
                 font-weight: 550;
-                color: #2e3458;
-                margin-left: 10px;
+                color: #FFF;
+                transition: all .3s;
             }
 
             a:hover {
@@ -67,7 +73,7 @@ body {
         .pc_max {
             height: 760px;
             width: 100%;
-            background-color: #25a000;
+            // background-color: #25a000;
             display: flex;
             flex-direction: row;
             flex-wrap: wrap;
@@ -141,7 +147,7 @@ body {
         .mobile_max {
             height: auto;
             width: 100%;
-            background-color: #25a000;
+            // background-color: #25a000;
             flex-direction: row;
             flex-wrap: wrap;
             display: none;
@@ -194,7 +200,7 @@ body {
         .pc_min {
             height: 400px;
             width: 100%;
-            background-color: #25a000;
+            // background-color: #25a000;
             display: flex;
             flex-direction: row;
             flex-wrap: wrap;
@@ -334,14 +340,14 @@ footer {
 // 媒体查询 自适应
 @media(max-width:950px) {
     .banner {
-        height: 240px;
+        height: 165px;
 
         .swiper {
-            height: 240px;
+            height: 165px;
 
             img {
-                height: 240px;
-                width: 130%;
+                height: 165px;
+                width: 100%;
                 // margin: 0 auto;
             }
 
@@ -363,7 +369,8 @@ footer {
 
         .TV_series,
         .Movie,
-        .variety_show {
+        .variety_show,
+        .Documentary {
             height: auto;
             width: 100%;
             margin: 0 auto;
@@ -400,7 +407,13 @@ footer {
         }
     }
 
-    .foot_content {
-        font-size: 10px;
+    footer {
+        height: 145px;
+
+        .foot_content {
+            height: auto;
+            margin-top: 13px;
+            font-size: 10px;
+        }
     }
 }
