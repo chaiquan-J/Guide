@@ -78,10 +78,10 @@ function checkUserpwd() {
   } else {
     if (!reg_fpwd.test(userpwd)) {
       span_userpwd.style.display = "initial";
-      flag_userphone = false;
+      flag_userpwd = false;
     } else {
       span_userpwd.style.display = "none";
-      flag_userphone = true;
+      flag_userpwd = true;
     }
   }
   return (flag_userpwd);
@@ -108,12 +108,15 @@ function checkUserphone() {
 }
 
 function chlik_sub() {
-  console.log(checkName());
-  // checkName()
-  // checkPwd()
-  // checkUsername()
-  // checkUserpwd()
-  // checkUserphone()
+  if(checkName()==true&&checkPwd()==true){
+    window.location.href="../../index.html";
+  }
+}
+
+function subBtn(){
+  if(checkUsername()==true&&checkUserpwd()==true&&checkUserphone()==true){
+    window.location.href="../../index.html";
+  }
 }
 
 function checkForm() {
