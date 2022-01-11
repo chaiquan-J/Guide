@@ -18,6 +18,10 @@ body{
   width: 340px;
   height: 60px;
   background: #eee;
+  display: flex;
+}
+.item_zhuce{
+  float: right;
 }
 .table_item div{
   width: 170px;
