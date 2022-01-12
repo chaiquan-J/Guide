@@ -82,6 +82,7 @@ p{
   cursor: pointer;
   /* 增加或减少字符间的空白 */
   letter-spacing: 4px;
+  margin-bottom: 20px;
 }
 .active{
   background: #fff;
