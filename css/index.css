@@ -412,10 +412,10 @@ footer {
   color: #fff;
 }
 footer .foot_content {
-  height: 170px;
+  height: auto;
   width: auto;
   margin: 0 auto;
-  margin-top: 40px;
+  margin-top: 55px;
   text-align: center;
   font-size: 20px;
 }
@@ -499,7 +499,7 @@ footer .foot_content p {
   }
   footer .foot_content {
     height: auto;
-    margin-top: 13px;
+    margin-top: 25px;
     font-size: 10px;
   }
 }

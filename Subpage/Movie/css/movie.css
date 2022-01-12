@@ -1,0 +1,623 @@
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
+}
+body {
+  font-family: montserrat;
+}
+.banner {
+  height: 630px;
+  width: 100%;
+  margin-top: 80px;
+  overflow: hidden;
+}
+.banner .swiper {
+  height: 630px;
+  width: 100%;
+}
+.banner .swiper img {
+  height: 630px;
+  width: 100%;
+}
+.content {
+  height: auto;
+  width: 1506px;
+  margin: 0 auto;
+}
+.content .hit-movie .box-title,
+.content .premiere-theater .box-title,
+.content .homemade-movie .box-title,
+.content .Film-review-column .box-title,
+.content .Featured-planning .box-title,
+.content .Best-Film-Awards .box-title,
+.content .cat-piece .box-title,
+.content .tough-guy-movie .box-title,
+.content .Movie-Inventory .box-title {
+  height: 70px;
+  width: 85%;
+  margin: 0 auto;
+  padding-top: 12px;
+}
+.content .hit-movie .box-title a,
+.content .premiere-theater .box-title a,
+.content .homemade-movie .box-title a,
+.content .Film-review-column .box-title a,
+.content .Featured-planning .box-title a,
+.content .Best-Film-Awards .box-title a,
+.content .cat-piece .box-title a,
+.content .tough-guy-movie .box-title a,
+.content .Movie-Inventory .box-title a {
+  font-size: 30px;
+  font-weight: 550;
+  color: #2e3458;
+  transition: all 0.3s;
+}
+.content .hit-movie .box-title a:hover,
+.content .premiere-theater .box-title a:hover,
+.content .homemade-movie .box-title a:hover,
+.content .Film-review-column .box-title a:hover,
+.content .Featured-planning .box-title a:hover,
+.content .Best-Film-Awards .box-title a:hover,
+.content .cat-piece .box-title a:hover,
+.content .tough-guy-movie .box-title a:hover,
+.content .Movie-Inventory .box-title a:hover {
+  color: #1b9bff;
+}
+.content .hit-movie .pc_min,
+.content .premiere-theater .pc_min,
+.content .homemade-movie .pc_min,
+.content .Film-review-column .pc_min,
+.content .Featured-planning .pc_min,
+.content .Best-Film-Awards .pc_min,
+.content .cat-piece .pc_min,
+.content .tough-guy-movie .pc_min,
+.content .Movie-Inventory .pc_min {
+  width: 85%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.content .hit-movie .pc_min .min_box:nth-child(1),
+.content .premiere-theater .pc_min .min_box:nth-child(1),
+.content .homemade-movie .pc_min .min_box:nth-child(1),
+.content .Film-review-column .pc_min .min_box:nth-child(1),
+.content .Featured-planning .pc_min .min_box:nth-child(1),
+.content .Best-Film-Awards .pc_min .min_box:nth-child(1),
+.content .cat-piece .pc_min .min_box:nth-child(1),
+.content .tough-guy-movie .pc_min .min_box:nth-child(1),
+.content .Movie-Inventory .pc_min .min_box:nth-child(1) {
+  margin-left: 0px;
+}
+.content .hit-movie .pc_min .min_box,
+.content .premiere-theater .pc_min .min_box,
+.content .homemade-movie .pc_min .min_box,
+.content .Film-review-column .pc_min .min_box,
+.content .Featured-planning .pc_min .min_box,
+.content .Best-Film-Awards .pc_min .min_box,
+.content .cat-piece .pc_min .min_box,
+.content .tough-guy-movie .pc_min .min_box,
+.content .Movie-Inventory .pc_min .min_box {
+  height: auto;
+  width: 198px;
+  margin-left: 18.4px;
+  margin-bottom: 10px;
+}
+.content .hit-movie .pc_min .min_box .min_img,
+.content .premiere-theater .pc_min .min_box .min_img,
+.content .homemade-movie .pc_min .min_box .min_img,
+.content .Film-review-column .pc_min .min_box .min_img,
+.content .Featured-planning .pc_min .min_box .min_img,
+.content .Best-Film-Awards .pc_min .min_box .min_img,
+.content .cat-piece .pc_min .min_box .min_img,
+.content .tough-guy-movie .pc_min .min_box .min_img,
+.content .Movie-Inventory .pc_min .min_box .min_img {
+  height: 111px;
+  width: 100%;
+  background-color: #1b9bff;
+  transition: all 0.5s;
+  border-radius: 5px;
+  margin-bottom: 18px;
+}
+.content .hit-movie .pc_min .min_box .min_img .back_img_wh,
+.content .premiere-theater .pc_min .min_box .min_img .back_img_wh,
+.content .homemade-movie .pc_min .min_box .min_img .back_img_wh,
+.content .Film-review-column .pc_min .min_box .min_img .back_img_wh,
+.content .Featured-planning .pc_min .min_box .min_img .back_img_wh,
+.content .Best-Film-Awards .pc_min .min_box .min_img .back_img_wh,
+.content .cat-piece .pc_min .min_box .min_img .back_img_wh,
+.content .tough-guy-movie .pc_min .min_box .min_img .back_img_wh,
+.content .Movie-Inventory .pc_min .min_box .min_img .back_img_wh {
+  border-radius: 5px;
+  width: 100%;
+  height: 100%;
+}
+.content .hit-movie .pc_min .min_box .min_img:hover,
+.content .premiere-theater .pc_min .min_box .min_img:hover,
+.content .homemade-movie .pc_min .min_box .min_img:hover,
+.content .Film-review-column .pc_min .min_box .min_img:hover,
+.content .Featured-planning .pc_min .min_box .min_img:hover,
+.content .Best-Film-Awards .pc_min .min_box .min_img:hover,
+.content .cat-piece .pc_min .min_box .min_img:hover,
+.content .tough-guy-movie .pc_min .min_box .min_img:hover,
+.content .Movie-Inventory .pc_min .min_box .min_img:hover {
+  transform: scale(1.2);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+}
+.content .hit-movie .pc_min .min_box .introduce,
+.content .premiere-theater .pc_min .min_box .introduce,
+.content .homemade-movie .pc_min .min_box .introduce,
+.content .Film-review-column .pc_min .min_box .introduce,
+.content .Featured-planning .pc_min .min_box .introduce,
+.content .Best-Film-Awards .pc_min .min_box .introduce,
+.content .cat-piece .pc_min .min_box .introduce,
+.content .tough-guy-movie .pc_min .min_box .introduce,
+.content .Movie-Inventory .pc_min .min_box .introduce {
+  height: auto;
+  width: 100%;
+}
+.content .hit-movie .pc_min .min_box .introduce span:nth-child(1),
+.content .premiere-theater .pc_min .min_box .introduce span:nth-child(1),
+.content .homemade-movie .pc_min .min_box .introduce span:nth-child(1),
+.content .Film-review-column .pc_min .min_box .introduce span:nth-child(1),
+.content .Featured-planning .pc_min .min_box .introduce span:nth-child(1),
+.content .Best-Film-Awards .pc_min .min_box .introduce span:nth-child(1),
+.content .cat-piece .pc_min .min_box .introduce span:nth-child(1),
+.content .tough-guy-movie .pc_min .min_box .introduce span:nth-child(1),
+.content .Movie-Inventory .pc_min .min_box .introduce span:nth-child(1) {
+  display: block;
+  font-size: 15px;
+  color: #2e3458;
+  font-weight: bold;
+  margin-bottom: 5px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.content .hit-movie .pc_min .min_box .introduce a:hover span:nth-child(1),
+.content .premiere-theater .pc_min .min_box .introduce a:hover span:nth-child(1),
+.content .homemade-movie .pc_min .min_box .introduce a:hover span:nth-child(1),
+.content .Film-review-column .pc_min .min_box .introduce a:hover span:nth-child(1),
+.content .Featured-planning .pc_min .min_box .introduce a:hover span:nth-child(1),
+.content .Best-Film-Awards .pc_min .min_box .introduce a:hover span:nth-child(1),
+.content .cat-piece .pc_min .min_box .introduce a:hover span:nth-child(1),
+.content .tough-guy-movie .pc_min .min_box .introduce a:hover span:nth-child(1),
+.content .Movie-Inventory .pc_min .min_box .introduce a:hover span:nth-child(1) {
+  color: #1b9bff;
+}
+.content .hit-movie .pc_min .min_box .introduce span:nth-child(2),
+.content .premiere-theater .pc_min .min_box .introduce span:nth-child(2),
+.content .homemade-movie .pc_min .min_box .introduce span:nth-child(2),
+.content .Film-review-column .pc_min .min_box .introduce span:nth-child(2),
+.content .Featured-planning .pc_min .min_box .introduce span:nth-child(2),
+.content .Best-Film-Awards .pc_min .min_box .introduce span:nth-child(2),
+.content .cat-piece .pc_min .min_box .introduce span:nth-child(2),
+.content .tough-guy-movie .pc_min .min_box .introduce span:nth-child(2),
+.content .Movie-Inventory .pc_min .min_box .introduce span:nth-child(2) {
+  display: block;
+  font-size: 10px;
+  color: #999;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.content .hit-movie .mobile_min,
+.content .premiere-theater .mobile_min,
+.content .homemade-movie .mobile_min,
+.content .Film-review-column .mobile_min,
+.content .Featured-planning .mobile_min,
+.content .Best-Film-Awards .mobile_min,
+.content .cat-piece .mobile_min,
+.content .tough-guy-movie .mobile_min,
+.content .Movie-Inventory .mobile_min {
+  height: auto;
+  width: 100%;
+  flex-direction: row;
+  flex-wrap: wrap;
+  display: none;
+}
+.content .hit-movie .mobile_min .min_box:nth-child(1),
+.content .premiere-theater .mobile_min .min_box:nth-child(1),
+.content .homemade-movie .mobile_min .min_box:nth-child(1),
+.content .Film-review-column .mobile_min .min_box:nth-child(1),
+.content .Featured-planning .mobile_min .min_box:nth-child(1),
+.content .Best-Film-Awards .mobile_min .min_box:nth-child(1),
+.content .cat-piece .mobile_min .min_box:nth-child(1),
+.content .tough-guy-movie .mobile_min .min_box:nth-child(1),
+.content .Movie-Inventory .mobile_min .min_box:nth-child(1) {
+  margin-left: 6px;
+  margin-right: 17px;
+}
+.content .hit-movie .mobile_min .min_box:nth-child(3),
+.content .premiere-theater .mobile_min .min_box:nth-child(3),
+.content .homemade-movie .mobile_min .min_box:nth-child(3),
+.content .Film-review-column .mobile_min .min_box:nth-child(3),
+.content .Featured-planning .mobile_min .min_box:nth-child(3),
+.content .Best-Film-Awards .mobile_min .min_box:nth-child(3),
+.content .cat-piece .mobile_min .min_box:nth-child(3),
+.content .tough-guy-movie .mobile_min .min_box:nth-child(3),
+.content .Movie-Inventory .mobile_min .min_box:nth-child(3) {
+  margin-left: 6px;
+  margin-right: 17px;
+}
+.content .hit-movie .mobile_min .min_box,
+.content .premiere-theater .mobile_min .min_box,
+.content .homemade-movie .mobile_min .min_box,
+.content .Film-review-column .mobile_min .min_box,
+.content .Featured-planning .mobile_min .min_box,
+.content .Best-Film-Awards .mobile_min .min_box,
+.content .cat-piece .mobile_min .min_box,
+.content .tough-guy-movie .mobile_min .min_box,
+.content .Movie-Inventory .mobile_min .min_box {
+  height: auto;
+  width: 180px;
+  margin-bottom: 15px;
+}
+.content .hit-movie .mobile_min .min_box .min_img,
+.content .premiere-theater .mobile_min .min_box .min_img,
+.content .homemade-movie .mobile_min .min_box .min_img,
+.content .Film-review-column .mobile_min .min_box .min_img,
+.content .Featured-planning .mobile_min .min_box .min_img,
+.content .Best-Film-Awards .mobile_min .min_box .min_img,
+.content .cat-piece .mobile_min .min_box .min_img,
+.content .tough-guy-movie .mobile_min .min_box .min_img,
+.content .Movie-Inventory .mobile_min .min_box .min_img {
+  height: 100px;
+  width: 100%;
+  background-color: #1b9bff;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+.content .hit-movie .mobile_min .min_box .min_img .back_img_wh,
+.content .premiere-theater .mobile_min .min_box .min_img .back_img_wh,
+.content .homemade-movie .mobile_min .min_box .min_img .back_img_wh,
+.content .Film-review-column .mobile_min .min_box .min_img .back_img_wh,
+.content .Featured-planning .mobile_min .min_box .min_img .back_img_wh,
+.content .Best-Film-Awards .mobile_min .min_box .min_img .back_img_wh,
+.content .cat-piece .mobile_min .min_box .min_img .back_img_wh,
+.content .tough-guy-movie .mobile_min .min_box .min_img .back_img_wh,
+.content .Movie-Inventory .mobile_min .min_box .min_img .back_img_wh {
+  width: 100%;
+  height: 100%;
+  border-radius: 5px;
+}
+.content .hit-movie .mobile_min .min_box .introduce,
+.content .premiere-theater .mobile_min .min_box .introduce,
+.content .homemade-movie .mobile_min .min_box .introduce,
+.content .Film-review-column .mobile_min .min_box .introduce,
+.content .Featured-planning .mobile_min .min_box .introduce,
+.content .Best-Film-Awards .mobile_min .min_box .introduce,
+.content .cat-piece .mobile_min .min_box .introduce,
+.content .tough-guy-movie .mobile_min .min_box .introduce,
+.content .Movie-Inventory .mobile_min .min_box .introduce {
+  height: auto;
+  width: 100%;
+}
+.content .hit-movie .mobile_min .min_box .introduce span:nth-child(1),
+.content .premiere-theater .mobile_min .min_box .introduce span:nth-child(1),
+.content .homemade-movie .mobile_min .min_box .introduce span:nth-child(1),
+.content .Film-review-column .mobile_min .min_box .introduce span:nth-child(1),
+.content .Featured-planning .mobile_min .min_box .introduce span:nth-child(1),
+.content .Best-Film-Awards .mobile_min .min_box .introduce span:nth-child(1),
+.content .cat-piece .mobile_min .min_box .introduce span:nth-child(1),
+.content .tough-guy-movie .mobile_min .min_box .introduce span:nth-child(1),
+.content .Movie-Inventory .mobile_min .min_box .introduce span:nth-child(1) {
+  display: block;
+  font-size: 15px;
+  color: #2e3458;
+  font-weight: bold;
+  margin-bottom: 5px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.content .hit-movie .mobile_min .min_box .introduce span:nth-child(2),
+.content .premiere-theater .mobile_min .min_box .introduce span:nth-child(2),
+.content .homemade-movie .mobile_min .min_box .introduce span:nth-child(2),
+.content .Film-review-column .mobile_min .min_box .introduce span:nth-child(2),
+.content .Featured-planning .mobile_min .min_box .introduce span:nth-child(2),
+.content .Best-Film-Awards .mobile_min .min_box .introduce span:nth-child(2),
+.content .cat-piece .mobile_min .min_box .introduce span:nth-child(2),
+.content .tough-guy-movie .mobile_min .min_box .introduce span:nth-child(2),
+.content .Movie-Inventory .mobile_min .min_box .introduce span:nth-child(2) {
+  display: block;
+  font-size: 10px;
+  color: #999;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.content .hit-movie .pc_max,
+.content .premiere-theater .pc_max,
+.content .homemade-movie .pc_max,
+.content .Film-review-column .pc_max,
+.content .Featured-planning .pc_max,
+.content .Best-Film-Awards .pc_max,
+.content .cat-piece .pc_max,
+.content .tough-guy-movie .pc_max,
+.content .Movie-Inventory .pc_max {
+  width: 85%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin: 0 auto;
+}
+.content .hit-movie .pc_max .pc_box:nth-child(1),
+.content .premiere-theater .pc_max .pc_box:nth-child(1),
+.content .homemade-movie .pc_max .pc_box:nth-child(1),
+.content .Film-review-column .pc_max .pc_box:nth-child(1),
+.content .Featured-planning .pc_max .pc_box:nth-child(1),
+.content .Best-Film-Awards .pc_max .pc_box:nth-child(1),
+.content .cat-piece .pc_max .pc_box:nth-child(1),
+.content .tough-guy-movie .pc_max .pc_box:nth-child(1),
+.content .Movie-Inventory .pc_max .pc_box:nth-child(1) {
+  margin-left: 0;
+}
+.content .hit-movie .pc_max .pc_box:nth-child(7),
+.content .premiere-theater .pc_max .pc_box:nth-child(7),
+.content .homemade-movie .pc_max .pc_box:nth-child(7),
+.content .Film-review-column .pc_max .pc_box:nth-child(7),
+.content .Featured-planning .pc_max .pc_box:nth-child(7),
+.content .Best-Film-Awards .pc_max .pc_box:nth-child(7),
+.content .cat-piece .pc_max .pc_box:nth-child(7),
+.content .tough-guy-movie .pc_max .pc_box:nth-child(7),
+.content .Movie-Inventory .pc_max .pc_box:nth-child(7) {
+  margin-left: 0;
+}
+.content .hit-movie .pc_max .pc_box,
+.content .premiere-theater .pc_max .pc_box,
+.content .homemade-movie .pc_max .pc_box,
+.content .Film-review-column .pc_max .pc_box,
+.content .Featured-planning .pc_max .pc_box,
+.content .Best-Film-Awards .pc_max .pc_box,
+.content .cat-piece .pc_max .pc_box,
+.content .tough-guy-movie .pc_max .pc_box,
+.content .Movie-Inventory .pc_max .pc_box {
+  height: 345px;
+  width: 195px;
+  margin-left: 20px;
+  margin-bottom: 10px;
+}
+.content .hit-movie .pc_max .pc_box .pc_main,
+.content .premiere-theater .pc_max .pc_box .pc_main,
+.content .homemade-movie .pc_max .pc_box .pc_main,
+.content .Film-review-column .pc_max .pc_box .pc_main,
+.content .Featured-planning .pc_max .pc_box .pc_main,
+.content .Best-Film-Awards .pc_max .pc_box .pc_main,
+.content .cat-piece .pc_max .pc_box .pc_main,
+.content .tough-guy-movie .pc_max .pc_box .pc_main,
+.content .Movie-Inventory .pc_max .pc_box .pc_main {
+  display: block;
+  height: 277px;
+  width: 198px;
+  border-radius: 5px;
+  background-color: #0cd1d8;
+  margin-bottom: 20px;
+  transition: all 0.3s;
+  z-index: 2;
+  overflow: hidden;
+}
+.content .hit-movie .pc_max .pc_box .pc_main .back_img .back_img_wh,
+.content .premiere-theater .pc_max .pc_box .pc_main .back_img .back_img_wh,
+.content .homemade-movie .pc_max .pc_box .pc_main .back_img .back_img_wh,
+.content .Film-review-column .pc_max .pc_box .pc_main .back_img .back_img_wh,
+.content .Featured-planning .pc_max .pc_box .pc_main .back_img .back_img_wh,
+.content .Best-Film-Awards .pc_max .pc_box .pc_main .back_img .back_img_wh,
+.content .cat-piece .pc_max .pc_box .pc_main .back_img .back_img_wh,
+.content .tough-guy-movie .pc_max .pc_box .pc_main .back_img .back_img_wh,
+.content .Movie-Inventory .pc_max .pc_box .pc_main .back_img .back_img_wh {
+  width: 100%;
+  height: 100%;
+}
+.content .hit-movie .pc_max .pc_box .pc_main:hover,
+.content .premiere-theater .pc_max .pc_box .pc_main:hover,
+.content .homemade-movie .pc_max .pc_box .pc_main:hover,
+.content .Film-review-column .pc_max .pc_box .pc_main:hover,
+.content .Featured-planning .pc_max .pc_box .pc_main:hover,
+.content .Best-Film-Awards .pc_max .pc_box .pc_main:hover,
+.content .cat-piece .pc_max .pc_box .pc_main:hover,
+.content .tough-guy-movie .pc_max .pc_box .pc_main:hover,
+.content .Movie-Inventory .pc_max .pc_box .pc_main:hover {
+  transform: scale(1.2);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+}
+.content .hit-movie .pc_max .pc_box .introduce,
+.content .premiere-theater .pc_max .pc_box .introduce,
+.content .homemade-movie .pc_max .pc_box .introduce,
+.content .Film-review-column .pc_max .pc_box .introduce,
+.content .Featured-planning .pc_max .pc_box .introduce,
+.content .Best-Film-Awards .pc_max .pc_box .introduce,
+.content .cat-piece .pc_max .pc_box .introduce,
+.content .tough-guy-movie .pc_max .pc_box .introduce,
+.content .Movie-Inventory .pc_max .pc_box .introduce {
+  height: auto;
+  width: 198px;
+  z-index: 1;
+}
+.content .hit-movie .pc_max .pc_box .introduce span:nth-child(1),
+.content .premiere-theater .pc_max .pc_box .introduce span:nth-child(1),
+.content .homemade-movie .pc_max .pc_box .introduce span:nth-child(1),
+.content .Film-review-column .pc_max .pc_box .introduce span:nth-child(1),
+.content .Featured-planning .pc_max .pc_box .introduce span:nth-child(1),
+.content .Best-Film-Awards .pc_max .pc_box .introduce span:nth-child(1),
+.content .cat-piece .pc_max .pc_box .introduce span:nth-child(1),
+.content .tough-guy-movie .pc_max .pc_box .introduce span:nth-child(1),
+.content .Movie-Inventory .pc_max .pc_box .introduce span:nth-child(1) {
+  display: block;
+  font-size: 15px;
+  font-weight: bold;
+  color: #2e3458;
+  margin-bottom: 5px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.content .hit-movie .pc_max .pc_box .introduce a:hover span:nth-child(1),
+.content .premiere-theater .pc_max .pc_box .introduce a:hover span:nth-child(1),
+.content .homemade-movie .pc_max .pc_box .introduce a:hover span:nth-child(1),
+.content .Film-review-column .pc_max .pc_box .introduce a:hover span:nth-child(1),
+.content .Featured-planning .pc_max .pc_box .introduce a:hover span:nth-child(1),
+.content .Best-Film-Awards .pc_max .pc_box .introduce a:hover span:nth-child(1),
+.content .cat-piece .pc_max .pc_box .introduce a:hover span:nth-child(1),
+.content .tough-guy-movie .pc_max .pc_box .introduce a:hover span:nth-child(1),
+.content .Movie-Inventory .pc_max .pc_box .introduce a:hover span:nth-child(1) {
+  color: #1b9bff;
+}
+.content .hit-movie .pc_max .pc_box .introduce span:nth-child(2),
+.content .premiere-theater .pc_max .pc_box .introduce span:nth-child(2),
+.content .homemade-movie .pc_max .pc_box .introduce span:nth-child(2),
+.content .Film-review-column .pc_max .pc_box .introduce span:nth-child(2),
+.content .Featured-planning .pc_max .pc_box .introduce span:nth-child(2),
+.content .Best-Film-Awards .pc_max .pc_box .introduce span:nth-child(2),
+.content .cat-piece .pc_max .pc_box .introduce span:nth-child(2),
+.content .tough-guy-movie .pc_max .pc_box .introduce span:nth-child(2),
+.content .Movie-Inventory .pc_max .pc_box .introduce span:nth-child(2) {
+  display: block;
+  color: #999;
+  font-size: 13px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.content .hit-movie .mobile_max,
+.content .premiere-theater .mobile_max,
+.content .homemade-movie .mobile_max,
+.content .Film-review-column .mobile_max,
+.content .Featured-planning .mobile_max,
+.content .Best-Film-Awards .mobile_max,
+.content .cat-piece .mobile_max,
+.content .tough-guy-movie .mobile_max,
+.content .Movie-Inventory .mobile_max {
+  height: auto;
+  width: 100%;
+  flex-direction: row;
+  flex-wrap: wrap;
+  display: none;
+}
+.content .hit-movie .mobile_max .pc_box,
+.content .premiere-theater .mobile_max .pc_box,
+.content .homemade-movie .mobile_max .pc_box,
+.content .Film-review-column .mobile_max .pc_box,
+.content .Featured-planning .mobile_max .pc_box,
+.content .Best-Film-Awards .mobile_max .pc_box,
+.content .cat-piece .mobile_max .pc_box,
+.content .tough-guy-movie .mobile_max .pc_box,
+.content .Movie-Inventory .mobile_max .pc_box {
+  height: auto;
+  width: 120px;
+  margin-left: 5px;
+  margin-bottom: 20px;
+  flex: 1;
+}
+.content .hit-movie .mobile_max .pc_box .pc_main,
+.content .premiere-theater .mobile_max .pc_box .pc_main,
+.content .homemade-movie .mobile_max .pc_box .pc_main,
+.content .Film-review-column .mobile_max .pc_box .pc_main,
+.content .Featured-planning .mobile_max .pc_box .pc_main,
+.content .Best-Film-Awards .mobile_max .pc_box .pc_main,
+.content .cat-piece .mobile_max .pc_box .pc_main,
+.content .tough-guy-movie .mobile_max .pc_box .pc_main,
+.content .Movie-Inventory .mobile_max .pc_box .pc_main {
+  display: block;
+  height: 165px;
+  width: 120px;
+  border-radius: 5px;
+  background-color: #0cd1d8;
+  margin-bottom: 10px;
+  transition: all 0.3s;
+  overflow: hidden;
+}
+.content .hit-movie .mobile_max .pc_box .pc_main .back_img_wh,
+.content .premiere-theater .mobile_max .pc_box .pc_main .back_img_wh,
+.content .homemade-movie .mobile_max .pc_box .pc_main .back_img_wh,
+.content .Film-review-column .mobile_max .pc_box .pc_main .back_img_wh,
+.content .Featured-planning .mobile_max .pc_box .pc_main .back_img_wh,
+.content .Best-Film-Awards .mobile_max .pc_box .pc_main .back_img_wh,
+.content .cat-piece .mobile_max .pc_box .pc_main .back_img_wh,
+.content .tough-guy-movie .mobile_max .pc_box .pc_main .back_img_wh,
+.content .Movie-Inventory .mobile_max .pc_box .pc_main .back_img_wh {
+  width: 100%;
+  height: 100%;
+  border-radius: 5px;
+}
+.content .hit-movie .mobile_max .pc_box .introduce,
+.content .premiere-theater .mobile_max .pc_box .introduce,
+.content .homemade-movie .mobile_max .pc_box .introduce,
+.content .Film-review-column .mobile_max .pc_box .introduce,
+.content .Featured-planning .mobile_max .pc_box .introduce,
+.content .Best-Film-Awards .mobile_max .pc_box .introduce,
+.content .cat-piece .mobile_max .pc_box .introduce,
+.content .tough-guy-movie .mobile_max .pc_box .introduce,
+.content .Movie-Inventory .mobile_max .pc_box .introduce {
+  height: auto;
+  width: 100%;
+}
+.content .hit-movie .mobile_max .pc_box .introduce span:nth-child(1),
+.content .premiere-theater .mobile_max .pc_box .introduce span:nth-child(1),
+.content .homemade-movie .mobile_max .pc_box .introduce span:nth-child(1),
+.content .Film-review-column .mobile_max .pc_box .introduce span:nth-child(1),
+.content .Featured-planning .mobile_max .pc_box .introduce span:nth-child(1),
+.content .Best-Film-Awards .mobile_max .pc_box .introduce span:nth-child(1),
+.content .cat-piece .mobile_max .pc_box .introduce span:nth-child(1),
+.content .tough-guy-movie .mobile_max .pc_box .introduce span:nth-child(1),
+.content .Movie-Inventory .mobile_max .pc_box .introduce span:nth-child(1) {
+  display: block;
+  font-size: 15px;
+  color: #2e3458;
+  font-weight: bold;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  margin-bottom: 5px;
+}
+.content .hit-movie .mobile_max .pc_box .introduce span:nth-child(2),
+.content .premiere-theater .mobile_max .pc_box .introduce span:nth-child(2),
+.content .homemade-movie .mobile_max .pc_box .introduce span:nth-child(2),
+.content .Film-review-column .mobile_max .pc_box .introduce span:nth-child(2),
+.content .Featured-planning .mobile_max .pc_box .introduce span:nth-child(2),
+.content .Best-Film-Awards .mobile_max .pc_box .introduce span:nth-child(2),
+.content .cat-piece .mobile_max .pc_box .introduce span:nth-child(2),
+.content .tough-guy-movie .mobile_max .pc_box .introduce span:nth-child(2),
+.content .Movie-Inventory .mobile_max .pc_box .introduce span:nth-child(2) {
+  display: block;
+  color: #999;
+  font-size: 10px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.content .hit-movie .pro-box-pc,
+.content .premiere-theater .pro-box-pc,
+.content .homemade-movie .pro-box-pc,
+.content .Film-review-column .pro-box-pc,
+.content .Featured-planning .pro-box-pc,
+.content .Best-Film-Awards .pro-box-pc,
+.content .cat-piece .pro-box-pc,
+.content .tough-guy-movie .pro-box-pc,
+.content .Movie-Inventory .pro-box-pc {
+  width: 85%;
+  background-color: #25a000;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin: 0 auto;
+}
+footer {
+  height: 250px;
+  width: 100%;
+  background-color: #2e3458;
+  border-top: 2px solid #1b9bff;
+  margin-top: 75px;
+  color: #fff;
+}
+footer .foot_content {
+  height: auto;
+  width: auto;
+  margin: 0 auto;
+  margin-top: 55px;
+  text-align: center;
+  font-size: 20px;
+}
+footer .foot_content p {
+  margin-bottom: 10px;
+}

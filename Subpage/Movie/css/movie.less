@@ -30,29 +30,22 @@ body {
     }
 }
 
-// 内容块
 .content {
     height: auto;
     width: 1506px;
-    // background-color: #2e3458;
+    // background-color: #bebebe;
     margin: 0 auto;
 
-    .Documentary {
-        .pc_max {
-            height: 350px !important;
-        }
-    }
-
-    .TV_series,
-    .Movie,
-    .variety_show,
-    .Documentary {
-        height: auto;
-        width: 100%;
-        margin: 0 auto;
-        // background-color: #ff9e71;
-
-        .max_title {
+    .hit-movie,
+    .premiere-theater,
+    .homemade-movie,
+    .Film-review-column,
+    .Featured-planning,
+    .Best-Film-Awards,
+    .cat-piece,
+    .tough-guy-movie,
+    .Movie-Inventory {
+        .box-title {
             height: 70px;
             width: 85%;
             margin: 0 auto;
@@ -71,6 +64,145 @@ body {
             }
         }
 
+        // PC小方块
+        .pc_min {
+            // height: 400px;
+            width: 85%;
+            margin: 0 auto;
+            // background-color: #25a000;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+
+            .min_box:nth-child(1) {
+                margin-left: 0px;
+            }
+
+            .min_box {
+                height: auto;
+                width: 198px;
+                margin-left: 18.4px;
+                margin-bottom: 10px;
+
+                .min_img {
+                    height: 111px;
+                    width: 100%;
+                    background-color: #1b9bff;
+                    transition: all .5s;
+                    border-radius: 5px;
+                    margin-bottom: 18px;
+
+                    .back_img_wh {
+                        border-radius: 5px;
+                        width: 100%;
+                        height: 100%;
+                    }
+                }
+
+                .min_img:hover {
+                    transform: scale(1.2);
+                    box-shadow: 0 15px 30px rgba(0, 0, 0, .1);
+                }
+
+                .introduce {
+                    height: auto;
+                    width: 100%;
+                    // background-color: #ffb8fb;
+
+                    span:nth-child(1) {
+                        display: block;
+                        font-size: 15px;
+                        color: #2e3458;
+                        font-weight: bold;
+                        margin-bottom: 5px;
+                        text-overflow: ellipsis;
+                        white-space: nowrap;
+                    }
+
+                    a:hover {
+                        span:nth-child(1) {
+                            color: #1b9bff;
+                        }
+                    }
+
+                    span:nth-child(2) {
+                        display: block;
+                        font-size: 10px;
+                        color: #999;
+                        overflow: hidden;
+                        text-overflow: ellipsis;
+                        white-space: nowrap;
+                    }
+                }
+            }
+        }
+
+        // 小方块移动端
+        .mobile_min {
+            height: auto;
+            width: 100%;
+            // background-color: #25a000;
+            flex-direction: row;
+            flex-wrap: wrap;
+            display: none;
+
+            .min_box:nth-child(1) {
+                margin-left: 6px;
+                margin-right: 17px;
+            }
+
+            .min_box:nth-child(3) {
+                margin-left: 6px;
+                margin-right: 17px;
+            }
+
+            .min_box {
+                height: auto;
+                width: 180px;
+                margin-bottom: 15px;
+
+                .min_img {
+                    height: 100px;
+                    width: 100%;
+                    background-color: #1b9bff;
+                    border-radius: 5px;
+                    margin-bottom: 10px;
+
+                    .back_img_wh {
+                        width: 100%;
+                        height: 100%;
+                        border-radius: 5px;
+                    }
+                }
+
+                .introduce {
+                    height: auto;
+                    width: 100%;
+                    // background-color: #ffb8fb;
+
+                    span:nth-child(1) {
+                        display: block;
+                        font-size: 15px;
+                        color: #2e3458;
+                        font-weight: bold;
+                        margin-bottom: 5px;
+                        overflow: hidden;
+                        text-overflow: ellipsis;
+                        white-space: nowrap;
+                    }
+
+                    span:nth-child(2) {
+                        display: block;
+                        font-size: 10px;
+                        color: #999;
+                        overflow: hidden;
+                        text-overflow: ellipsis;
+                        white-space: nowrap;
+                    }
+                }
+            }
+        }
+
         // pc大方块显示
         .pc_max {
             // height: 760px;
@@ -85,7 +217,7 @@ body {
                 margin-left: 0;
             }
 
-            .pc_box:nth-child(8) {
+            .pc_box:nth-child(7) {
                 margin-left: 0;
             }
 
@@ -213,148 +345,21 @@ body {
             }
         }
 
-        // 小方块pc
-        .pc_min {
-            // height: 400px;
+        // PC超大长方块
+        .pro-box-pc {
+            // height: 760px;
             width: 85%;
-            margin: 0 auto;
-            // background-color: #25a000;
+            background-color: #25a000;
             display: flex;
             flex-direction: row;
             flex-wrap: wrap;
+            margin: 0 auto;
 
-            .min_box:nth-child(1) {
-                margin-left: 0px;
-            }
 
-            .min_box:nth-child(8) {
-                margin-left: 0px;
-            }
-
-            .min_box {
-                height: auto;
-                width: 198px;
-                margin-left: 18px;
-                margin-bottom: 10px;
-
-                .min_img {
-                    height: 111px;
-                    width: 100%;
-                    background-color: #1b9bff;
-                    transition: all .5s;
-                    border-radius: 5px;
-                    margin-bottom: 18px;
-
-                    .back_img_wh {
-                        border-radius: 5px;
-                        width: 100%;
-                        height: 100%;
-                    }
-                }
-
-                .min_img:hover {
-                    transform: scale(1.2);
-                    box-shadow: 0 15px 30px rgba(0, 0, 0, .1);
-                }
-
-                .introduce {
-                    height: auto;
-                    width: 100%;
-                    // background-color: #ffb8fb;
-
-                    span:nth-child(1) {
-                        display: block;
-                        font-size: 15px;
-                        color: #2e3458;
-                        font-weight: bold;
-                        margin-bottom: 5px;
-                        text-overflow: ellipsis;
-                        white-space: nowrap;
-                    }
-
-                    a:hover {
-                        span:nth-child(1) {
-                            color: #1b9bff;
-                        }
-                    }
-
-                    span:nth-child(2) {
-                        display: block;
-                        font-size: 10px;
-                        color: #999;
-                        overflow: hidden;
-                        text-overflow: ellipsis;
-                        white-space: nowrap;
-                    }
-                }
-            }
         }
 
-        // 小方块移动端
-        .mobile_min {
-            height: auto;
-            width: 100%;
-            // background-color: #25a000;
-            flex-direction: row;
-            flex-wrap: wrap;
-            display: none;
-
-            .min_box:nth-child(1) {
-                margin-left: 6px;
-                margin-right: 17px;
-            }
-
-            .min_box:nth-child(3) {
-                margin-left: 6px;
-                margin-right: 17px;
-            }
-
-            .min_box {
-                height: auto;
-                width: 180px;
-                margin-bottom: 15px;
-
-                .min_img {
-                    height: 100px;
-                    width: 100%;
-                    background-color: #1b9bff;
-                    border-radius: 5px;
-                    margin-bottom: 10px;
-
-                    .back_img_wh {
-                        width: 100%;
-                        height: 100%;
-                        border-radius: 5px;
-                    }
-                }
-
-                .introduce {
-                    height: auto;
-                    width: 100%;
-                    // background-color: #ffb8fb;
-
-                    span:nth-child(1) {
-                        display: block;
-                        font-size: 15px;
-                        color: #2e3458;
-                        font-weight: bold;
-                        margin-bottom: 5px;
-                        overflow: hidden;
-                        text-overflow: ellipsis;
-                        white-space: nowrap;
-                    }
-
-                    span:nth-child(2) {
-                        display: block;
-                        font-size: 10px;
-                        color: #999;
-                        overflow: hidden;
-                        text-overflow: ellipsis;
-                        white-space: nowrap;
-                    }
-                }
-            }
-        }
+        // 移动端长方块
+        .pro-box-min {}
     }
 }
 
@@ -378,89 +383,6 @@ footer {
 
         p {
             margin-bottom: 10px;
-        }
-    }
-}
-
-// 媒体查询 自适应
-@media(max-width:950px) {
-    .banner {
-        height: 165px;
-
-        .swiper {
-            height: 165px;
-
-            img {
-                height: 165px;
-                width: 100%;
-                // margin: 0 auto;
-            }
-
-            .swiper-button-prev {
-                display: none;
-            }
-
-            .swiper-button-next {
-                display: none;
-            }
-        }
-    }
-
-    .content {
-        height: auto;
-        width: 100%;
-        // background-color: #2e3458;
-        margin: 0 auto;
-
-        .TV_series,
-        .Movie,
-        .variety_show,
-        .Documentary {
-            height: auto;
-            width: 100%;
-            margin: 0 auto;
-            // background-color: #ff9e71;
-
-            .max_title {
-                height: 50px;
-                width: 100%;
-                // background-color: #71ff71;
-                line-height: 50px;
-                padding-top: 0px;
-
-                a {
-                    font-size: 20px;
-                    font-weight: bold;
-                    color: #2e3458;
-                    padding-left: 10px;
-                }
-            }
-
-            .pc_max {
-                display: none;
-            }
-
-            .mobile_max {
-                display: flex;
-            }
-
-            .pc_min {
-                display: none;
-            }
-
-            .mobile_min {
-                display: flex;
-            }
-        }
-    }
-
-    footer {
-        height: 145px;
-
-        .foot_content {
-            height: auto;
-            margin-top: 25px;
-            font-size: 10px;
         }
     }
 }
