@@ -81,6 +81,17 @@ body {
 .content .Movie-Inventory .pc_min .min_box:nth-child(1) {
   margin-left: 0px;
 }
+.content .hit-movie .pc_min .min_box:nth-child(7),
+.content .premiere-theater .pc_min .min_box:nth-child(7),
+.content .homemade-movie .pc_min .min_box:nth-child(7),
+.content .Film-review-column .pc_min .min_box:nth-child(7),
+.content .Featured-planning .pc_min .min_box:nth-child(7),
+.content .Best-Film-Awards .pc_min .min_box:nth-child(7),
+.content .cat-piece .pc_min .min_box:nth-child(7),
+.content .tough-guy-movie .pc_min .min_box:nth-child(7),
+.content .Movie-Inventory .pc_min .min_box:nth-child(7) {
+  margin-left: 0px;
+}
 .content .hit-movie .pc_min .min_box,
 .content .premiere-theater .pc_min .min_box,
 .content .homemade-movie .pc_min .min_box,

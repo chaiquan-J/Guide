@@ -26,16 +26,14 @@ body {
   height: auto;
   width: 1506px;
   margin: 0 auto;
+  margin-top: 20px;
 }
 .content .hit-movie .box-title,
 .content .premiere-theater .box-title,
 .content .homemade-movie .box-title,
 .content .Film-review-column .box-title,
 .content .Featured-planning .box-title,
-.content .Best-Film-Awards .box-title,
-.content .cat-piece .box-title,
-.content .tough-guy-movie .box-title,
-.content .Movie-Inventory .box-title {
+.content .Best-Film-Awards .box-title {
   height: 70px;
   width: 85%;
   margin: 0 auto;
@@ -46,10 +44,7 @@ body {
 .content .homemade-movie .box-title span,
 .content .Film-review-column .box-title span,
 .content .Featured-planning .box-title span,
-.content .Best-Film-Awards .box-title span,
-.content .cat-piece .box-title span,
-.content .tough-guy-movie .box-title span,
-.content .Movie-Inventory .box-title span {
+.content .Best-Film-Awards .box-title span {
   font-size: 30px;
   font-weight: 550;
   color: #2e3458;
@@ -60,10 +55,7 @@ body {
 .content .homemade-movie .pc_min,
 .content .Film-review-column .pc_min,
 .content .Featured-planning .pc_min,
-.content .Best-Film-Awards .pc_min,
-.content .cat-piece .pc_min,
-.content .tough-guy-movie .pc_min,
-.content .Movie-Inventory .pc_min {
+.content .Best-Film-Awards .pc_min {
   width: 85%;
   margin: 0 auto;
   display: flex;
@@ -75,10 +67,15 @@ body {
 .content .homemade-movie .pc_min .min_box:nth-child(1),
 .content .Film-review-column .pc_min .min_box:nth-child(1),
 .content .Featured-planning .pc_min .min_box:nth-child(1),
-.content .Best-Film-Awards .pc_min .min_box:nth-child(1),
-.content .cat-piece .pc_min .min_box:nth-child(1),
-.content .tough-guy-movie .pc_min .min_box:nth-child(1),
-.content .Movie-Inventory .pc_min .min_box:nth-child(1) {
+.content .Best-Film-Awards .pc_min .min_box:nth-child(1) {
+  margin-left: 0px;
+}
+.content .hit-movie .pc_min .min_box:nth-child(7),
+.content .premiere-theater .pc_min .min_box:nth-child(7),
+.content .homemade-movie .pc_min .min_box:nth-child(7),
+.content .Film-review-column .pc_min .min_box:nth-child(7),
+.content .Featured-planning .pc_min .min_box:nth-child(7),
+.content .Best-Film-Awards .pc_min .min_box:nth-child(7) {
   margin-left: 0px;
 }
 .content .hit-movie .pc_min .min_box,
@@ -86,10 +83,7 @@ body {
 .content .homemade-movie .pc_min .min_box,
 .content .Film-review-column .pc_min .min_box,
 .content .Featured-planning .pc_min .min_box,
-.content .Best-Film-Awards .pc_min .min_box,
-.content .cat-piece .pc_min .min_box,
-.content .tough-guy-movie .pc_min .min_box,
-.content .Movie-Inventory .pc_min .min_box {
+.content .Best-Film-Awards .pc_min .min_box {
   height: auto;
   width: 198px;
   margin-left: 18.4px;
@@ -100,10 +94,7 @@ body {
 .content .homemade-movie .pc_min .min_box .min_img,
 .content .Film-review-column .pc_min .min_box .min_img,
 .content .Featured-planning .pc_min .min_box .min_img,
-.content .Best-Film-Awards .pc_min .min_box .min_img,
-.content .cat-piece .pc_min .min_box .min_img,
-.content .tough-guy-movie .pc_min .min_box .min_img,
-.content .Movie-Inventory .pc_min .min_box .min_img {
+.content .Best-Film-Awards .pc_min .min_box .min_img {
   height: 111px;
   width: 100%;
   background-color: #1b9bff;
@@ -116,10 +107,7 @@ body {
 .content .homemade-movie .pc_min .min_box .min_img .back_img_wh,
 .content .Film-review-column .pc_min .min_box .min_img .back_img_wh,
 .content .Featured-planning .pc_min .min_box .min_img .back_img_wh,
-.content .Best-Film-Awards .pc_min .min_box .min_img .back_img_wh,
-.content .cat-piece .pc_min .min_box .min_img .back_img_wh,
-.content .tough-guy-movie .pc_min .min_box .min_img .back_img_wh,
-.content .Movie-Inventory .pc_min .min_box .min_img .back_img_wh {
+.content .Best-Film-Awards .pc_min .min_box .min_img .back_img_wh {
   border-radius: 5px;
   width: 100%;
   height: 100%;
@@ -129,10 +117,7 @@ body {
 .content .homemade-movie .pc_min .min_box .min_img:hover,
 .content .Film-review-column .pc_min .min_box .min_img:hover,
 .content .Featured-planning .pc_min .min_box .min_img:hover,
-.content .Best-Film-Awards .pc_min .min_box .min_img:hover,
-.content .cat-piece .pc_min .min_box .min_img:hover,
-.content .tough-guy-movie .pc_min .min_box .min_img:hover,
-.content .Movie-Inventory .pc_min .min_box .min_img:hover {
+.content .Best-Film-Awards .pc_min .min_box .min_img:hover {
   transform: scale(1.2);
   box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
 }
@@ -141,10 +126,7 @@ body {
 .content .homemade-movie .pc_min .min_box .introduce,
 .content .Film-review-column .pc_min .min_box .introduce,
 .content .Featured-planning .pc_min .min_box .introduce,
-.content .Best-Film-Awards .pc_min .min_box .introduce,
-.content .cat-piece .pc_min .min_box .introduce,
-.content .tough-guy-movie .pc_min .min_box .introduce,
-.content .Movie-Inventory .pc_min .min_box .introduce {
+.content .Best-Film-Awards .pc_min .min_box .introduce {
   height: auto;
   width: 100%;
 }
@@ -153,10 +135,7 @@ body {
 .content .homemade-movie .pc_min .min_box .introduce span:nth-child(1),
 .content .Film-review-column .pc_min .min_box .introduce span:nth-child(1),
 .content .Featured-planning .pc_min .min_box .introduce span:nth-child(1),
-.content .Best-Film-Awards .pc_min .min_box .introduce span:nth-child(1),
-.content .cat-piece .pc_min .min_box .introduce span:nth-child(1),
-.content .tough-guy-movie .pc_min .min_box .introduce span:nth-child(1),
-.content .Movie-Inventory .pc_min .min_box .introduce span:nth-child(1) {
+.content .Best-Film-Awards .pc_min .min_box .introduce span:nth-child(1) {
   display: block;
   font-size: 15px;
   color: #2e3458;
@@ -170,10 +149,7 @@ body {
 .content .homemade-movie .pc_min .min_box .introduce a:hover span:nth-child(1),
 .content .Film-review-column .pc_min .min_box .introduce a:hover span:nth-child(1),
 .content .Featured-planning .pc_min .min_box .introduce a:hover span:nth-child(1),
-.content .Best-Film-Awards .pc_min .min_box .introduce a:hover span:nth-child(1),
-.content .cat-piece .pc_min .min_box .introduce a:hover span:nth-child(1),
-.content .tough-guy-movie .pc_min .min_box .introduce a:hover span:nth-child(1),
-.content .Movie-Inventory .pc_min .min_box .introduce a:hover span:nth-child(1) {
+.content .Best-Film-Awards .pc_min .min_box .introduce a:hover span:nth-child(1) {
   color: #1b9bff;
 }
 .content .hit-movie .pc_min .min_box .introduce span:nth-child(2),
@@ -181,10 +157,7 @@ body {
 .content .homemade-movie .pc_min .min_box .introduce span:nth-child(2),
 .content .Film-review-column .pc_min .min_box .introduce span:nth-child(2),
 .content .Featured-planning .pc_min .min_box .introduce span:nth-child(2),
-.content .Best-Film-Awards .pc_min .min_box .introduce span:nth-child(2),
-.content .cat-piece .pc_min .min_box .introduce span:nth-child(2),
-.content .tough-guy-movie .pc_min .min_box .introduce span:nth-child(2),
-.content .Movie-Inventory .pc_min .min_box .introduce span:nth-child(2) {
+.content .Best-Film-Awards .pc_min .min_box .introduce span:nth-child(2) {
   display: block;
   font-size: 10px;
   color: #999;
@@ -197,10 +170,7 @@ body {
 .content .homemade-movie .mobile_min,
 .content .Film-review-column .mobile_min,
 .content .Featured-planning .mobile_min,
-.content .Best-Film-Awards .mobile_min,
-.content .cat-piece .mobile_min,
-.content .tough-guy-movie .mobile_min,
-.content .Movie-Inventory .mobile_min {
+.content .Best-Film-Awards .mobile_min {
   height: auto;
   width: 100%;
   flex-direction: row;
@@ -212,10 +182,7 @@ body {
 .content .homemade-movie .mobile_min .min_box:nth-child(1),
 .content .Film-review-column .mobile_min .min_box:nth-child(1),
 .content .Featured-planning .mobile_min .min_box:nth-child(1),
-.content .Best-Film-Awards .mobile_min .min_box:nth-child(1),
-.content .cat-piece .mobile_min .min_box:nth-child(1),
-.content .tough-guy-movie .mobile_min .min_box:nth-child(1),
-.content .Movie-Inventory .mobile_min .min_box:nth-child(1) {
+.content .Best-Film-Awards .mobile_min .min_box:nth-child(1) {
   margin-left: 6px;
   margin-right: 17px;
 }
@@ -224,10 +191,7 @@ body {
 .content .homemade-movie .mobile_min .min_box:nth-child(3),
 .content .Film-review-column .mobile_min .min_box:nth-child(3),
 .content .Featured-planning .mobile_min .min_box:nth-child(3),
-.content .Best-Film-Awards .mobile_min .min_box:nth-child(3),
-.content .cat-piece .mobile_min .min_box:nth-child(3),
-.content .tough-guy-movie .mobile_min .min_box:nth-child(3),
-.content .Movie-Inventory .mobile_min .min_box:nth-child(3) {
+.content .Best-Film-Awards .mobile_min .min_box:nth-child(3) {
   margin-left: 6px;
   margin-right: 17px;
 }
@@ -236,10 +200,7 @@ body {
 .content .homemade-movie .mobile_min .min_box,
 .content .Film-review-column .mobile_min .min_box,
 .content .Featured-planning .mobile_min .min_box,
-.content .Best-Film-Awards .mobile_min .min_box,
-.content .cat-piece .mobile_min .min_box,
-.content .tough-guy-movie .mobile_min .min_box,
-.content .Movie-Inventory .mobile_min .min_box {
+.content .Best-Film-Awards .mobile_min .min_box {
   height: auto;
   width: 180px;
   margin-bottom: 15px;
@@ -249,10 +210,7 @@ body {
 .content .homemade-movie .mobile_min .min_box .min_img,
 .content .Film-review-column .mobile_min .min_box .min_img,
 .content .Featured-planning .mobile_min .min_box .min_img,
-.content .Best-Film-Awards .mobile_min .min_box .min_img,
-.content .cat-piece .mobile_min .min_box .min_img,
-.content .tough-guy-movie .mobile_min .min_box .min_img,
-.content .Movie-Inventory .mobile_min .min_box .min_img {
+.content .Best-Film-Awards .mobile_min .min_box .min_img {
   height: 100px;
   width: 100%;
   background-color: #1b9bff;
@@ -264,10 +222,7 @@ body {
 .content .homemade-movie .mobile_min .min_box .min_img .back_img_wh,
 .content .Film-review-column .mobile_min .min_box .min_img .back_img_wh,
 .content .Featured-planning .mobile_min .min_box .min_img .back_img_wh,
-.content .Best-Film-Awards .mobile_min .min_box .min_img .back_img_wh,
-.content .cat-piece .mobile_min .min_box .min_img .back_img_wh,
-.content .tough-guy-movie .mobile_min .min_box .min_img .back_img_wh,
-.content .Movie-Inventory .mobile_min .min_box .min_img .back_img_wh {
+.content .Best-Film-Awards .mobile_min .min_box .min_img .back_img_wh {
   width: 100%;
   height: 100%;
   border-radius: 5px;
@@ -277,10 +232,7 @@ body {
 .content .homemade-movie .mobile_min .min_box .introduce,
 .content .Film-review-column .mobile_min .min_box .introduce,
 .content .Featured-planning .mobile_min .min_box .introduce,
-.content .Best-Film-Awards .mobile_min .min_box .introduce,
-.content .cat-piece .mobile_min .min_box .introduce,
-.content .tough-guy-movie .mobile_min .min_box .introduce,
-.content .Movie-Inventory .mobile_min .min_box .introduce {
+.content .Best-Film-Awards .mobile_min .min_box .introduce {
   height: auto;
   width: 100%;
 }
@@ -289,10 +241,7 @@ body {
 .content .homemade-movie .mobile_min .min_box .introduce span:nth-child(1),
 .content .Film-review-column .mobile_min .min_box .introduce span:nth-child(1),
 .content .Featured-planning .mobile_min .min_box .introduce span:nth-child(1),
-.content .Best-Film-Awards .mobile_min .min_box .introduce span:nth-child(1),
-.content .cat-piece .mobile_min .min_box .introduce span:nth-child(1),
-.content .tough-guy-movie .mobile_min .min_box .introduce span:nth-child(1),
-.content .Movie-Inventory .mobile_min .min_box .introduce span:nth-child(1) {
+.content .Best-Film-Awards .mobile_min .min_box .introduce span:nth-child(1) {
   display: block;
   font-size: 15px;
   color: #2e3458;
@@ -307,10 +256,7 @@ body {
 .content .homemade-movie .mobile_min .min_box .introduce span:nth-child(2),
 .content .Film-review-column .mobile_min .min_box .introduce span:nth-child(2),
 .content .Featured-planning .mobile_min .min_box .introduce span:nth-child(2),
-.content .Best-Film-Awards .mobile_min .min_box .introduce span:nth-child(2),
-.content .cat-piece .mobile_min .min_box .introduce span:nth-child(2),
-.content .tough-guy-movie .mobile_min .min_box .introduce span:nth-child(2),
-.content .Movie-Inventory .mobile_min .min_box .introduce span:nth-child(2) {
+.content .Best-Film-Awards .mobile_min .min_box .introduce span:nth-child(2) {
   display: block;
   font-size: 10px;
   color: #999;
@@ -323,10 +269,7 @@ body {
 .content .homemade-movie .pc_max,
 .content .Film-review-column .pc_max,
 .content .Featured-planning .pc_max,
-.content .Best-Film-Awards .pc_max,
-.content .cat-piece .pc_max,
-.content .tough-guy-movie .pc_max,
-.content .Movie-Inventory .pc_max {
+.content .Best-Film-Awards .pc_max {
   width: 85%;
   display: flex;
   flex-direction: row;
@@ -338,10 +281,7 @@ body {
 .content .homemade-movie .pc_max .pc_box:nth-child(1),
 .content .Film-review-column .pc_max .pc_box:nth-child(1),
 .content .Featured-planning .pc_max .pc_box:nth-child(1),
-.content .Best-Film-Awards .pc_max .pc_box:nth-child(1),
-.content .cat-piece .pc_max .pc_box:nth-child(1),
-.content .tough-guy-movie .pc_max .pc_box:nth-child(1),
-.content .Movie-Inventory .pc_max .pc_box:nth-child(1) {
+.content .Best-Film-Awards .pc_max .pc_box:nth-child(1) {
   margin-left: 0;
 }
 .content .hit-movie .pc_max .pc_box:nth-child(7),
@@ -349,10 +289,7 @@ body {
 .content .homemade-movie .pc_max .pc_box:nth-child(7),
 .content .Film-review-column .pc_max .pc_box:nth-child(7),
 .content .Featured-planning .pc_max .pc_box:nth-child(7),
-.content .Best-Film-Awards .pc_max .pc_box:nth-child(7),
-.content .cat-piece .pc_max .pc_box:nth-child(7),
-.content .tough-guy-movie .pc_max .pc_box:nth-child(7),
-.content .Movie-Inventory .pc_max .pc_box:nth-child(7) {
+.content .Best-Film-Awards .pc_max .pc_box:nth-child(7) {
   margin-left: 0;
 }
 .content .hit-movie .pc_max .pc_box,
@@ -360,10 +297,7 @@ body {
 .content .homemade-movie .pc_max .pc_box,
 .content .Film-review-column .pc_max .pc_box,
 .content .Featured-planning .pc_max .pc_box,
-.content .Best-Film-Awards .pc_max .pc_box,
-.content .cat-piece .pc_max .pc_box,
-.content .tough-guy-movie .pc_max .pc_box,
-.content .Movie-Inventory .pc_max .pc_box {
+.content .Best-Film-Awards .pc_max .pc_box {
   height: 345px;
   width: 195px;
   margin-left: 20px;
@@ -374,10 +308,7 @@ body {
 .content .homemade-movie .pc_max .pc_box .pc_main,
 .content .Film-review-column .pc_max .pc_box .pc_main,
 .content .Featured-planning .pc_max .pc_box .pc_main,
-.content .Best-Film-Awards .pc_max .pc_box .pc_main,
-.content .cat-piece .pc_max .pc_box .pc_main,
-.content .tough-guy-movie .pc_max .pc_box .pc_main,
-.content .Movie-Inventory .pc_max .pc_box .pc_main {
+.content .Best-Film-Awards .pc_max .pc_box .pc_main {
   display: block;
   height: 277px;
   width: 198px;
@@ -393,10 +324,7 @@ body {
 .content .homemade-movie .pc_max .pc_box .pc_main .back_img .back_img_wh,
 .content .Film-review-column .pc_max .pc_box .pc_main .back_img .back_img_wh,
 .content .Featured-planning .pc_max .pc_box .pc_main .back_img .back_img_wh,
-.content .Best-Film-Awards .pc_max .pc_box .pc_main .back_img .back_img_wh,
-.content .cat-piece .pc_max .pc_box .pc_main .back_img .back_img_wh,
-.content .tough-guy-movie .pc_max .pc_box .pc_main .back_img .back_img_wh,
-.content .Movie-Inventory .pc_max .pc_box .pc_main .back_img .back_img_wh {
+.content .Best-Film-Awards .pc_max .pc_box .pc_main .back_img .back_img_wh {
   width: 100%;
   height: 100%;
 }
@@ -405,10 +333,7 @@ body {
 .content .homemade-movie .pc_max .pc_box .pc_main:hover,
 .content .Film-review-column .pc_max .pc_box .pc_main:hover,
 .content .Featured-planning .pc_max .pc_box .pc_main:hover,
-.content .Best-Film-Awards .pc_max .pc_box .pc_main:hover,
-.content .cat-piece .pc_max .pc_box .pc_main:hover,
-.content .tough-guy-movie .pc_max .pc_box .pc_main:hover,
-.content .Movie-Inventory .pc_max .pc_box .pc_main:hover {
+.content .Best-Film-Awards .pc_max .pc_box .pc_main:hover {
   transform: scale(1.2);
   box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
 }
@@ -417,10 +342,7 @@ body {
 .content .homemade-movie .pc_max .pc_box .introduce,
 .content .Film-review-column .pc_max .pc_box .introduce,
 .content .Featured-planning .pc_max .pc_box .introduce,
-.content .Best-Film-Awards .pc_max .pc_box .introduce,
-.content .cat-piece .pc_max .pc_box .introduce,
-.content .tough-guy-movie .pc_max .pc_box .introduce,
-.content .Movie-Inventory .pc_max .pc_box .introduce {
+.content .Best-Film-Awards .pc_max .pc_box .introduce {
   height: auto;
   width: 198px;
   z-index: 1;
@@ -430,10 +352,7 @@ body {
 .content .homemade-movie .pc_max .pc_box .introduce span:nth-child(1),
 .content .Film-review-column .pc_max .pc_box .introduce span:nth-child(1),
 .content .Featured-planning .pc_max .pc_box .introduce span:nth-child(1),
-.content .Best-Film-Awards .pc_max .pc_box .introduce span:nth-child(1),
-.content .cat-piece .pc_max .pc_box .introduce span:nth-child(1),
-.content .tough-guy-movie .pc_max .pc_box .introduce span:nth-child(1),
-.content .Movie-Inventory .pc_max .pc_box .introduce span:nth-child(1) {
+.content .Best-Film-Awards .pc_max .pc_box .introduce span:nth-child(1) {
   display: block;
   font-size: 15px;
   font-weight: bold;
@@ -447,10 +366,7 @@ body {
 .content .homemade-movie .pc_max .pc_box .introduce a:hover span:nth-child(1),
 .content .Film-review-column .pc_max .pc_box .introduce a:hover span:nth-child(1),
 .content .Featured-planning .pc_max .pc_box .introduce a:hover span:nth-child(1),
-.content .Best-Film-Awards .pc_max .pc_box .introduce a:hover span:nth-child(1),
-.content .cat-piece .pc_max .pc_box .introduce a:hover span:nth-child(1),
-.content .tough-guy-movie .pc_max .pc_box .introduce a:hover span:nth-child(1),
-.content .Movie-Inventory .pc_max .pc_box .introduce a:hover span:nth-child(1) {
+.content .Best-Film-Awards .pc_max .pc_box .introduce a:hover span:nth-child(1) {
   color: #1b9bff;
 }
 .content .hit-movie .pc_max .pc_box .introduce span:nth-child(2),
@@ -458,10 +374,7 @@ body {
 .content .homemade-movie .pc_max .pc_box .introduce span:nth-child(2),
 .content .Film-review-column .pc_max .pc_box .introduce span:nth-child(2),
 .content .Featured-planning .pc_max .pc_box .introduce span:nth-child(2),
-.content .Best-Film-Awards .pc_max .pc_box .introduce span:nth-child(2),
-.content .cat-piece .pc_max .pc_box .introduce span:nth-child(2),
-.content .tough-guy-movie .pc_max .pc_box .introduce span:nth-child(2),
-.content .Movie-Inventory .pc_max .pc_box .introduce span:nth-child(2) {
+.content .Best-Film-Awards .pc_max .pc_box .introduce span:nth-child(2) {
   display: block;
   color: #999;
   font-size: 13px;
@@ -473,10 +386,7 @@ body {
 .content .homemade-movie .mobile_max,
 .content .Film-review-column .mobile_max,
 .content .Featured-planning .mobile_max,
-.content .Best-Film-Awards .mobile_max,
-.content .cat-piece .mobile_max,
-.content .tough-guy-movie .mobile_max,
-.content .Movie-Inventory .mobile_max {
+.content .Best-Film-Awards .mobile_max {
   height: auto;
   width: 100%;
   flex-direction: row;
@@ -488,10 +398,7 @@ body {
 .content .homemade-movie .mobile_max .pc_box,
 .content .Film-review-column .mobile_max .pc_box,
 .content .Featured-planning .mobile_max .pc_box,
-.content .Best-Film-Awards .mobile_max .pc_box,
-.content .cat-piece .mobile_max .pc_box,
-.content .tough-guy-movie .mobile_max .pc_box,
-.content .Movie-Inventory .mobile_max .pc_box {
+.content .Best-Film-Awards .mobile_max .pc_box {
   height: auto;
   width: 120px;
   margin-left: 5px;
@@ -503,10 +410,7 @@ body {
 .content .homemade-movie .mobile_max .pc_box .pc_main,
 .content .Film-review-column .mobile_max .pc_box .pc_main,
 .content .Featured-planning .mobile_max .pc_box .pc_main,
-.content .Best-Film-Awards .mobile_max .pc_box .pc_main,
-.content .cat-piece .mobile_max .pc_box .pc_main,
-.content .tough-guy-movie .mobile_max .pc_box .pc_main,
-.content .Movie-Inventory .mobile_max .pc_box .pc_main {
+.content .Best-Film-Awards .mobile_max .pc_box .pc_main {
   display: block;
   height: 165px;
   width: 120px;
@@ -521,10 +425,7 @@ body {
 .content .homemade-movie .mobile_max .pc_box .pc_main .back_img_wh,
 .content .Film-review-column .mobile_max .pc_box .pc_main .back_img_wh,
 .content .Featured-planning .mobile_max .pc_box .pc_main .back_img_wh,
-.content .Best-Film-Awards .mobile_max .pc_box .pc_main .back_img_wh,
-.content .cat-piece .mobile_max .pc_box .pc_main .back_img_wh,
-.content .tough-guy-movie .mobile_max .pc_box .pc_main .back_img_wh,
-.content .Movie-Inventory .mobile_max .pc_box .pc_main .back_img_wh {
+.content .Best-Film-Awards .mobile_max .pc_box .pc_main .back_img_wh {
   width: 100%;
   height: 100%;
   border-radius: 5px;
@@ -534,10 +435,7 @@ body {
 .content .homemade-movie .mobile_max .pc_box .introduce,
 .content .Film-review-column .mobile_max .pc_box .introduce,
 .content .Featured-planning .mobile_max .pc_box .introduce,
-.content .Best-Film-Awards .mobile_max .pc_box .introduce,
-.content .cat-piece .mobile_max .pc_box .introduce,
-.content .tough-guy-movie .mobile_max .pc_box .introduce,
-.content .Movie-Inventory .mobile_max .pc_box .introduce {
+.content .Best-Film-Awards .mobile_max .pc_box .introduce {
   height: auto;
   width: 100%;
 }
@@ -546,10 +444,7 @@ body {
 .content .homemade-movie .mobile_max .pc_box .introduce span:nth-child(1),
 .content .Film-review-column .mobile_max .pc_box .introduce span:nth-child(1),
 .content .Featured-planning .mobile_max .pc_box .introduce span:nth-child(1),
-.content .Best-Film-Awards .mobile_max .pc_box .introduce span:nth-child(1),
-.content .cat-piece .mobile_max .pc_box .introduce span:nth-child(1),
-.content .tough-guy-movie .mobile_max .pc_box .introduce span:nth-child(1),
-.content .Movie-Inventory .mobile_max .pc_box .introduce span:nth-child(1) {
+.content .Best-Film-Awards .mobile_max .pc_box .introduce span:nth-child(1) {
   display: block;
   font-size: 15px;
   color: #2e3458;
@@ -564,10 +459,7 @@ body {
 .content .homemade-movie .mobile_max .pc_box .introduce span:nth-child(2),
 .content .Film-review-column .mobile_max .pc_box .introduce span:nth-child(2),
 .content .Featured-planning .mobile_max .pc_box .introduce span:nth-child(2),
-.content .Best-Film-Awards .mobile_max .pc_box .introduce span:nth-child(2),
-.content .cat-piece .mobile_max .pc_box .introduce span:nth-child(2),
-.content .tough-guy-movie .mobile_max .pc_box .introduce span:nth-child(2),
-.content .Movie-Inventory .mobile_max .pc_box .introduce span:nth-child(2) {
+.content .Best-Film-Awards .mobile_max .pc_box .introduce span:nth-child(2) {
   display: block;
   color: #999;
   font-size: 10px;
@@ -580,10 +472,7 @@ body {
 .content .homemade-movie .pro-box-pc,
 .content .Film-review-column .pro-box-pc,
 .content .Featured-planning .pro-box-pc,
-.content .Best-Film-Awards .pro-box-pc,
-.content .cat-piece .pro-box-pc,
-.content .tough-guy-movie .pro-box-pc,
-.content .Movie-Inventory .pro-box-pc {
+.content .Best-Film-Awards .pro-box-pc {
   width: 85%;
   display: flex;
   flex-direction: row;
@@ -595,10 +484,7 @@ body {
 .content .homemade-movie .pro-box-pc .cont-box:nth-child(1),
 .content .Film-review-column .pro-box-pc .cont-box:nth-child(1),
 .content .Featured-planning .pro-box-pc .cont-box:nth-child(1),
-.content .Best-Film-Awards .pro-box-pc .cont-box:nth-child(1),
-.content .cat-piece .pro-box-pc .cont-box:nth-child(1),
-.content .tough-guy-movie .pro-box-pc .cont-box:nth-child(1),
-.content .Movie-Inventory .pro-box-pc .cont-box:nth-child(1) {
+.content .Best-Film-Awards .pro-box-pc .cont-box:nth-child(1) {
   margin-left: 0px;
 }
 .content .hit-movie .pro-box-pc .cont-box,
@@ -606,10 +492,7 @@ body {
 .content .homemade-movie .pro-box-pc .cont-box,
 .content .Film-review-column .pro-box-pc .cont-box,
 .content .Featured-planning .pro-box-pc .cont-box,
-.content .Best-Film-Awards .pro-box-pc .cont-box,
-.content .cat-piece .pro-box-pc .cont-box,
-.content .tough-guy-movie .pro-box-pc .cont-box,
-.content .Movie-Inventory .pro-box-pc .cont-box {
+.content .Best-Film-Awards .pro-box-pc .cont-box {
   height: auto;
   width: 414px;
   margin-left: 18.5px;
@@ -620,10 +503,7 @@ body {
 .content .homemade-movie .pro-box-pc .cont-box .cont-img,
 .content .Film-review-column .pro-box-pc .cont-box .cont-img,
 .content .Featured-planning .pro-box-pc .cont-box .cont-img,
-.content .Best-Film-Awards .pro-box-pc .cont-box .cont-img,
-.content .cat-piece .pro-box-pc .cont-box .cont-img,
-.content .tough-guy-movie .pro-box-pc .cont-box .cont-img,
-.content .Movie-Inventory .pro-box-pc .cont-box .cont-img {
+.content .Best-Film-Awards .pro-box-pc .cont-box .cont-img {
   height: 232px;
   width: 100%;
   background-color: #1b9bff;
@@ -638,10 +518,7 @@ body {
 .content .homemade-movie .pro-box-pc .cont-box .cont-img .back_img_wh,
 .content .Film-review-column .pro-box-pc .cont-box .cont-img .back_img_wh,
 .content .Featured-planning .pro-box-pc .cont-box .cont-img .back_img_wh,
-.content .Best-Film-Awards .pro-box-pc .cont-box .cont-img .back_img_wh,
-.content .cat-piece .pro-box-pc .cont-box .cont-img .back_img_wh,
-.content .tough-guy-movie .pro-box-pc .cont-box .cont-img .back_img_wh,
-.content .Movie-Inventory .pro-box-pc .cont-box .cont-img .back_img_wh {
+.content .Best-Film-Awards .pro-box-pc .cont-box .cont-img .back_img_wh {
   width: 100%;
   height: 100%;
   border-radius: 5px;
@@ -651,10 +528,7 @@ body {
 .content .homemade-movie .pro-box-pc .cont-box .cont-img:hover,
 .content .Film-review-column .pro-box-pc .cont-box .cont-img:hover,
 .content .Featured-planning .pro-box-pc .cont-box .cont-img:hover,
-.content .Best-Film-Awards .pro-box-pc .cont-box .cont-img:hover,
-.content .cat-piece .pro-box-pc .cont-box .cont-img:hover,
-.content .tough-guy-movie .pro-box-pc .cont-box .cont-img:hover,
-.content .Movie-Inventory .pro-box-pc .cont-box .cont-img:hover {
+.content .Best-Film-Awards .pro-box-pc .cont-box .cont-img:hover {
   transform: scale(1.2);
   box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
 }
@@ -663,10 +537,7 @@ body {
 .content .homemade-movie .pro-box-pc .cont-box .introduce,
 .content .Film-review-column .pro-box-pc .cont-box .introduce,
 .content .Featured-planning .pro-box-pc .cont-box .introduce,
-.content .Best-Film-Awards .pro-box-pc .cont-box .introduce,
-.content .cat-piece .pro-box-pc .cont-box .introduce,
-.content .tough-guy-movie .pro-box-pc .cont-box .introduce,
-.content .Movie-Inventory .pro-box-pc .cont-box .introduce {
+.content .Best-Film-Awards .pro-box-pc .cont-box .introduce {
   height: auto;
   width: 198px;
   z-index: 1;
@@ -676,10 +547,7 @@ body {
 .content .homemade-movie .pro-box-pc .cont-box .introduce span:nth-child(1),
 .content .Film-review-column .pro-box-pc .cont-box .introduce span:nth-child(1),
 .content .Featured-planning .pro-box-pc .cont-box .introduce span:nth-child(1),
-.content .Best-Film-Awards .pro-box-pc .cont-box .introduce span:nth-child(1),
-.content .cat-piece .pro-box-pc .cont-box .introduce span:nth-child(1),
-.content .tough-guy-movie .pro-box-pc .cont-box .introduce span:nth-child(1),
-.content .Movie-Inventory .pro-box-pc .cont-box .introduce span:nth-child(1) {
+.content .Best-Film-Awards .pro-box-pc .cont-box .introduce span:nth-child(1) {
   display: block;
   font-size: 15px;
   font-weight: bold;
@@ -693,10 +561,7 @@ body {
 .content .homemade-movie .pro-box-pc .cont-box .introduce a:hover span:nth-child(1),
 .content .Film-review-column .pro-box-pc .cont-box .introduce a:hover span:nth-child(1),
 .content .Featured-planning .pro-box-pc .cont-box .introduce a:hover span:nth-child(1),
-.content .Best-Film-Awards .pro-box-pc .cont-box .introduce a:hover span:nth-child(1),
-.content .cat-piece .pro-box-pc .cont-box .introduce a:hover span:nth-child(1),
-.content .tough-guy-movie .pro-box-pc .cont-box .introduce a:hover span:nth-child(1),
-.content .Movie-Inventory .pro-box-pc .cont-box .introduce a:hover span:nth-child(1) {
+.content .Best-Film-Awards .pro-box-pc .cont-box .introduce a:hover span:nth-child(1) {
   color: #1b9bff;
 }
 .content .hit-movie .pro-box-min,
@@ -704,10 +569,7 @@ body {
 .content .homemade-movie .pro-box-min,
 .content .Film-review-column .pro-box-min,
 .content .Featured-planning .pro-box-min,
-.content .Best-Film-Awards .pro-box-min,
-.content .cat-piece .pro-box-min,
-.content .tough-guy-movie .pro-box-min,
-.content .Movie-Inventory .pro-box-min {
+.content .Best-Film-Awards .pro-box-min {
   height: auto;
   width: 100%;
   flex-direction: column;
@@ -719,10 +581,7 @@ body {
 .content .homemade-movie .pro-box-min .cont-box,
 .content .Film-review-column .pro-box-min .cont-box,
 .content .Featured-planning .pro-box-min .cont-box,
-.content .Best-Film-Awards .pro-box-min .cont-box,
-.content .cat-piece .pro-box-min .cont-box,
-.content .tough-guy-movie .pro-box-min .cont-box,
-.content .Movie-Inventory .pro-box-min .cont-box {
+.content .Best-Film-Awards .pro-box-min .cont-box {
   height: auto;
   width: 100%;
   flex: 1;
@@ -732,10 +591,7 @@ body {
 .content .homemade-movie .pro-box-min .cont-box .cont-img,
 .content .Film-review-column .pro-box-min .cont-box .cont-img,
 .content .Featured-planning .pro-box-min .cont-box .cont-img,
-.content .Best-Film-Awards .pro-box-min .cont-box .cont-img,
-.content .cat-piece .pro-box-min .cont-box .cont-img,
-.content .tough-guy-movie .pro-box-min .cont-box .cont-img,
-.content .Movie-Inventory .pro-box-min .cont-box .cont-img {
+.content .Best-Film-Awards .pro-box-min .cont-box .cont-img {
   display: block;
   height: 175px;
   width: 95%;
@@ -751,10 +607,7 @@ body {
 .content .homemade-movie .pro-box-min .cont-box .introduce,
 .content .Film-review-column .pro-box-min .cont-box .introduce,
 .content .Featured-planning .pro-box-min .cont-box .introduce,
-.content .Best-Film-Awards .pro-box-min .cont-box .introduce,
-.content .cat-piece .pro-box-min .cont-box .introduce,
-.content .tough-guy-movie .pro-box-min .cont-box .introduce,
-.content .Movie-Inventory .pro-box-min .cont-box .introduce {
+.content .Best-Film-Awards .pro-box-min .cont-box .introduce {
   height: auto;
   width: 100%;
   z-index: 1;
@@ -765,10 +618,7 @@ body {
 .content .homemade-movie .pro-box-min .cont-box .introduce span:nth-child(1),
 .content .Film-review-column .pro-box-min .cont-box .introduce span:nth-child(1),
 .content .Featured-planning .pro-box-min .cont-box .introduce span:nth-child(1),
-.content .Best-Film-Awards .pro-box-min .cont-box .introduce span:nth-child(1),
-.content .cat-piece .pro-box-min .cont-box .introduce span:nth-child(1),
-.content .tough-guy-movie .pro-box-min .cont-box .introduce span:nth-child(1),
-.content .Movie-Inventory .pro-box-min .cont-box .introduce span:nth-child(1) {
+.content .Best-Film-Awards .pro-box-min .cont-box .introduce span:nth-child(1) {
   display: block;
   font-size: 15px;
   font-weight: bold;
@@ -823,7 +673,10 @@ footer .foot_content p {
   .content .homemade-movie,
   .content .Film-review-column,
   .content .Featured-planning,
-  .content .Best-Film-Awards {
+  .content .Best-Film-Awards,
+  .content .cat-piece,
+  .content .tough-guy-movie,
+  .content .Movie-Inventory {
     height: auto;
     width: 100%;
     margin: 0 auto;
@@ -833,7 +686,10 @@ footer .foot_content p {
   .content .homemade-movie .box-title,
   .content .Film-review-column .box-title,
   .content .Featured-planning .box-title,
-  .content .Best-Film-Awards .box-title {
+  .content .Best-Film-Awards .box-title,
+  .content .cat-piece .box-title,
+  .content .tough-guy-movie .box-title,
+  .content .Movie-Inventory .box-title {
     height: 50px;
     width: 100%;
     line-height: 50px;
@@ -844,7 +700,10 @@ footer .foot_content p {
   .content .homemade-movie .box-title span,
   .content .Film-review-column .box-title span,
   .content .Featured-planning .box-title span,
-  .content .Best-Film-Awards .box-title span {
+  .content .Best-Film-Awards .box-title span,
+  .content .cat-piece .box-title span,
+  .content .tough-guy-movie .box-title span,
+  .content .Movie-Inventory .box-title span {
     font-size: 20px;
     font-weight: bold;
     color: #2e3458;
@@ -855,7 +714,10 @@ footer .foot_content p {
   .content .homemade-movie .pc_max,
   .content .Film-review-column .pc_max,
   .content .Featured-planning .pc_max,
-  .content .Best-Film-Awards .pc_max {
+  .content .Best-Film-Awards .pc_max,
+  .content .cat-piece .pc_max,
+  .content .tough-guy-movie .pc_max,
+  .content .Movie-Inventory .pc_max {
     display: none;
   }
   .content .hit-movie .mobile_max,
@@ -863,7 +725,10 @@ footer .foot_content p {
   .content .homemade-movie .mobile_max,
   .content .Film-review-column .mobile_max,
   .content .Featured-planning .mobile_max,
-  .content .Best-Film-Awards .mobile_max {
+  .content .Best-Film-Awards .mobile_max,
+  .content .cat-piece .mobile_max,
+  .content .tough-guy-movie .mobile_max,
+  .content .Movie-Inventory .mobile_max {
     display: flex;
   }
   .content .hit-movie .pc_min,
@@ -871,7 +736,10 @@ footer .foot_content p {
   .content .homemade-movie .pc_min,
   .content .Film-review-column .pc_min,
   .content .Featured-planning .pc_min,
-  .content .Best-Film-Awards .pc_min {
+  .content .Best-Film-Awards .pc_min,
+  .content .cat-piece .pc_min,
+  .content .tough-guy-movie .pc_min,
+  .content .Movie-Inventory .pc_min {
     display: none;
   }
   .content .hit-movie .mobile_min,
@@ -879,7 +747,10 @@ footer .foot_content p {
   .content .homemade-movie .mobile_min,
   .content .Film-review-column .mobile_min,
   .content .Featured-planning .mobile_min,
-  .content .Best-Film-Awards .mobile_min {
+  .content .Best-Film-Awards .mobile_min,
+  .content .cat-piece .mobile_min,
+  .content .tough-guy-movie .mobile_min,
+  .content .Movie-Inventory .mobile_min {
     display: flex;
   }
   .content .hit-movie .pro-box-pc,
@@ -887,7 +758,10 @@ footer .foot_content p {
   .content .homemade-movie .pro-box-pc,
   .content .Film-review-column .pro-box-pc,
   .content .Featured-planning .pro-box-pc,
-  .content .Best-Film-Awards .pro-box-pc {
+  .content .Best-Film-Awards .pro-box-pc,
+  .content .cat-piece .pro-box-pc,
+  .content .tough-guy-movie .pro-box-pc,
+  .content .Movie-Inventory .pro-box-pc {
     display: none;
   }
   .content .hit-movie .pro-box-min,
@@ -895,7 +769,10 @@ footer .foot_content p {
   .content .homemade-movie .pro-box-min,
   .content .Film-review-column .pro-box-min,
   .content .Featured-planning .pro-box-min,
-  .content .Best-Film-Awards .pro-box-min {
+  .content .Best-Film-Awards .pro-box-min,
+  .content .cat-piece .pro-box-min,
+  .content .tough-guy-movie .pro-box-min,
+  .content .Movie-Inventory .pro-box-min {
     display: flex;
   }
   footer {
