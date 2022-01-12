@@ -119,6 +119,10 @@ function subBtn(){
   }
 }
 
+function backBtn(){
+  window.location.href="../../index.html";
+}
+
 function checkForm() {
   var flag = checkName()
   console.log(flag)
