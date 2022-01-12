@@ -7,7 +7,6 @@
 }
 body {
   font-family: montserrat;
-  /* background-color: #2e3458; */
 }
 .banner {
   height: 630px;
@@ -26,7 +25,6 @@ body {
 .content {
   height: auto;
   width: 1506px;
-  /* background-color: #2e3458; */
   margin: 0 auto;
 }
 .content .Documentary .pc_max {
@@ -103,30 +101,31 @@ body {
   height: 277px;
   width: 198px;
   border-radius: 5px;
+  background-color: #0cd1d8;
   margin-bottom: 20px;
   transition: all 0.3s;
   z-index: 2;
   overflow: hidden;
 }
-.content .TV_series .pc_max .pc_box .pc_main .back_img,
-.content .Movie .pc_max .pc_box .pc_main .back_img,
-.content .variety_show .pc_max .pc_box .pc_main .back_img,
-.content .Documentary .pc_max .pc_box .pc_main .back_img {
-  background-size: 50% 50%;
-  background-position: 50% 50%;
+.content .TV_series .pc_max .pc_box .pc_main .back_img .back_img_wh,
+.content .Movie .pc_max .pc_box .pc_main .back_img .back_img_wh,
+.content .variety_show .pc_max .pc_box .pc_main .back_img .back_img_wh,
+.content .Documentary .pc_max .pc_box .pc_main .back_img .back_img_wh {
+  width: 100%;
+  height: 100%;
 }
 .content .TV_series .pc_max .pc_box .pc_main:hover,
 .content .Movie .pc_max .pc_box .pc_main:hover,
 .content .variety_show .pc_max .pc_box .pc_main:hover,
 .content .Documentary .pc_max .pc_box .pc_main:hover {
-  transform: scale(1.1);
+  transform: scale(1.2);
   box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
 }
 .content .TV_series .pc_max .pc_box .introduce,
 .content .Movie .pc_max .pc_box .introduce,
 .content .variety_show .pc_max .pc_box .introduce,
 .content .Documentary .pc_max .pc_box .introduce {
-  height: 45px;
+  height: auto;
   width: 198px;
   z-index: 1;
 }
@@ -186,29 +185,38 @@ body {
   height: 165px;
   width: 120px;
   border-radius: 5px;
-  margin-bottom: 20px;
+  background-color: #0cd1d8;
+  margin-bottom: 10px;
   transition: all 0.3s;
   overflow: hidden;
-  background-size: 50% 50%;
-  background-position: 50% 50%;
+}
+.content .TV_series .mobile_max .pc_box .pc_main .back_img_wh,
+.content .Movie .mobile_max .pc_box .pc_main .back_img_wh,
+.content .variety_show .mobile_max .pc_box .pc_main .back_img_wh,
+.content .Documentary .mobile_max .pc_box .pc_main .back_img_wh {
+  width: 100%;
+  height: 100%;
+  border-radius: 5px;
 }
 .content .TV_series .mobile_max .pc_box .introduce,
 .content .Movie .mobile_max .pc_box .introduce,
 .content .variety_show .mobile_max .pc_box .introduce,
 .content .Documentary .mobile_max .pc_box .introduce {
-  height: 35px;
-  width: 120px;
+  height: auto;
+  width: 100%;
 }
 .content .TV_series .mobile_max .pc_box .introduce span:nth-child(1),
 .content .Movie .mobile_max .pc_box .introduce span:nth-child(1),
 .content .variety_show .mobile_max .pc_box .introduce span:nth-child(1),
 .content .Documentary .mobile_max .pc_box .introduce span:nth-child(1) {
   display: block;
-  font-size: 12px;
+  font-size: 15px;
   color: #2e3458;
   font-weight: bold;
   text-overflow: ellipsis;
   white-space: nowrap;
+  overflow: hidden;
+  margin-bottom: 5px;
 }
 .content .TV_series .mobile_max .pc_box .introduce span:nth-child(2),
 .content .Movie .mobile_max .pc_box .introduce span:nth-child(2),
@@ -226,10 +234,10 @@ body {
 .content .variety_show .pc_min,
 .content .Documentary .pc_min {
   width: 85%;
+  margin: 0 auto;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  margin: 0 auto;
 }
 .content .TV_series .pc_min .min_box:nth-child(1),
 .content .Movie .pc_min .min_box:nth-child(1),
@@ -247,9 +255,9 @@ body {
 .content .Movie .pc_min .min_box,
 .content .variety_show .pc_min .min_box,
 .content .Documentary .pc_min .min_box {
-  height: 164px;
-  width: 195px;
-  margin-left: 20px;
+  height: auto;
+  width: 198px;
+  margin-left: 18px;
   margin-bottom: 10px;
 }
 .content .TV_series .pc_min .min_box .min_img,
@@ -258,22 +266,31 @@ body {
 .content .Documentary .pc_min .min_box .min_img {
   height: 111px;
   width: 100%;
+  background-color: #1b9bff;
   transition: all 0.5s;
   border-radius: 5px;
   margin-bottom: 18px;
+}
+.content .TV_series .pc_min .min_box .min_img .back_img_wh,
+.content .Movie .pc_min .min_box .min_img .back_img_wh,
+.content .variety_show .pc_min .min_box .min_img .back_img_wh,
+.content .Documentary .pc_min .min_box .min_img .back_img_wh {
+  border-radius: 5px;
+  width: 100%;
+  height: 100%;
 }
 .content .TV_series .pc_min .min_box .min_img:hover,
 .content .Movie .pc_min .min_box .min_img:hover,
 .content .variety_show .pc_min .min_box .min_img:hover,
 .content .Documentary .pc_min .min_box .min_img:hover {
-  transform: scale(1.1);
+  transform: scale(1.2);
   box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
 }
 .content .TV_series .pc_min .min_box .introduce,
 .content .Movie .pc_min .min_box .introduce,
 .content .variety_show .pc_min .min_box .introduce,
 .content .Documentary .pc_min .min_box .introduce {
-  height: 45px;
+  height: auto;
   width: 100%;
 }
 .content .TV_series .pc_min .min_box .introduce span:nth-child(1),
@@ -341,17 +358,25 @@ body {
 .content .Movie .mobile_min .min_box .min_img,
 .content .variety_show .mobile_min .min_box .min_img,
 .content .Documentary .mobile_min .min_box .min_img {
-  height: 112px;
+  height: 100px;
   width: 100%;
   background-color: #1b9bff;
   border-radius: 5px;
-  margin-bottom: 18px;
+  margin-bottom: 10px;
+}
+.content .TV_series .mobile_min .min_box .min_img .back_img_wh,
+.content .Movie .mobile_min .min_box .min_img .back_img_wh,
+.content .variety_show .mobile_min .min_box .min_img .back_img_wh,
+.content .Documentary .mobile_min .min_box .min_img .back_img_wh {
+  width: 100%;
+  height: 100%;
+  border-radius: 5px;
 }
 .content .TV_series .mobile_min .min_box .introduce,
 .content .Movie .mobile_min .min_box .introduce,
 .content .variety_show .mobile_min .min_box .introduce,
 .content .Documentary .mobile_min .min_box .introduce {
-  height: 35px;
+  height: auto;
   width: 100%;
 }
 .content .TV_series .mobile_min .min_box .introduce span:nth-child(1),
@@ -359,10 +384,11 @@ body {
 .content .variety_show .mobile_min .min_box .introduce span:nth-child(1),
 .content .Documentary .mobile_min .min_box .introduce span:nth-child(1) {
   display: block;
-  font-size: 10px;
-  color: #FFF;
+  font-size: 15px;
+  color: #2e3458;
   font-weight: bold;
   margin-bottom: 5px;
+  overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
 }
@@ -372,7 +398,7 @@ body {
 .content .Documentary .mobile_min .min_box .introduce span:nth-child(2) {
   display: block;
   font-size: 10px;
-  color: #eee;
+  color: #999;
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
@@ -382,7 +408,7 @@ footer {
   width: 100%;
   background-color: #2e3458;
   border-top: 2px solid #1b9bff;
-  margin-top: 100px;
+  margin-top: 75px;
   color: #fff;
 }
 footer .foot_content {
@@ -391,7 +417,7 @@ footer .foot_content {
   margin: 0 auto;
   margin-top: 40px;
   text-align: center;
-  font-size: 15px;
+  font-size: 20px;
 }
 footer .foot_content p {
   margin-bottom: 10px;
@@ -416,7 +442,6 @@ footer .foot_content p {
   .content {
     height: auto;
     width: 100%;
-    /* background-color: #2e3458; */
     margin: 0 auto;
   }
   .content .TV_series,
@@ -442,7 +467,7 @@ footer .foot_content p {
   .content .Documentary .max_title a {
     font-size: 20px;
     font-weight: bold;
-    color: #FFF;
+    color: #2e3458;
     padding-left: 10px;
   }
   .content .TV_series .pc_max,
@@ -477,9 +502,4 @@ footer .foot_content p {
     margin-top: 13px;
     font-size: 10px;
   }
-}
-
-.back_img_wh{
-  width: 100%;
-  height: 100%;
 }
