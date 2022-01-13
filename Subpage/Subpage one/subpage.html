@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>详情页</title>
+    <link rel="stylesheet" href="../../css/nav.css">
+    <link rel="stylesheet" href="css/Subpage.css">
+    <link rel="stylesheet" href="../../css/music.css">
+    <link rel="stylesheet" href="../../font/iconfont.css">
+</head>
+
+<body>
+    <!-- 导航栏 -->
+    <nav>
+        <input type="checkbox" id="check">
+        <label class="checkbtn" for="check">
+            <img class="checkbtn_img" src="../../images/ul.png" alt="列表">
+        </label>
+        <label>
+            <img src="../../images/logo.png" alt="" class="logo_img">
+        </label>
+        <ul>
+            <li><a href="../../index.html">精选</a></li>
+            <li><a href="../TVseries/TVseries.html">电视剧</a></li>
+            <li><a href="../Movie/movie.html">电影</a></li>
+            <li><a href="../variety show/variety show.html">综艺</a></li>
+            <li><a href="../Documentary/Documentary.html">纪录片</a></li>
+            <li><a href="../table/table.html">注册/登录</a></li>
+        </ul>
+    </nav>
+
+    <!-- 内容 -->
+    <div class="content">
+
+        <!-- 页面名称 -->
+        <div class="page-title">
+            <span>影片介绍</span>
+            <div class="inedx-button">
+                <a href="../../index.html">返回</a>
+            </div>
+        </div>
+
+        <!-- 内容块 -->
+        <div class="cont-box">
+
+            <!-- 图片 -->
+            <div class="box-left">
+                <div class="img-box">
+                    <!-- <img src="" alt="" class="back-img-wh"> -->
+                </div>
+            </div>
+
+            <!-- 文字部分 -->
+            <div class="box-right">
+                <div class="right-top">
+                    <div class="left-text">
+                        <div class="label-box">
+                            <div class="label-title">
+                                片名:
+                            </div>
+                            <div class="label-text">
+                                唐人街探案2
+                            </div>
+                        </div>
+                        <div class="label-box">
+                            <div class="label-title">
+                                类型:
+                            </div>
+                            <div class="label-text">
+                                喜剧 / 动作 / 悬疑
+                            </div>
+                        </div>
+                        <div class="label-box">
+                            <div class="label-title">
+                                导演:
+                            </div>
+                            <div class="label-text">
+                                陈思成
+                            </div>
+                        </div>
+                        <div class="label-box">
+                            <div class="label-title">
+                                主演:
+                            </div>
+                            <div class="label-text">
+                                王宝强 / 刘昊然 / 佟丽娅 / 陈赫 / 肖央
+                            </div>
+                        </div>
+                    </div>
+                    <div class="right-text">
+                        <div class="label-box">
+                            <div class="label-title">
+                                语言:
+                            </div>
+                            <div class="label-text">
+                                汉语 / 泰语 / 英语
+                            </div>
+                        </div>
+                        <div class="label-box">
+                            <div class="label-title">
+                                上映时间:
+                            </div>
+                            <div class="label-text">
+                                2018-2-16(中国大陆)
+                            </div>
+                        </div>
+                        <div class="label-box">
+                            <div class="label-title">
+                                片长:
+                            </div>
+                            <div class="label-text">
+                                135分钟
+                            </div>
+                        </div>
+                        <div class="label-box">
+                            <div class="label-title">
+                                评分:
+                            </div>
+                            <div class="label-text">
+                                7.5分
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="right-bottom">
+                    <p>影片介绍:</p>
+                    <p>
+                        天赋异禀的结巴少年秦风(刘昊然饰)警校落榜,被姥姥遣送泰国找远房表舅——号称“唐人街第一神探”，实则猥琐的大叔唐仁(王宝强饰)散心。不想一夜花天酒地后,唐仁沦为离奇凶案嫌疑人,不得不和秦风亡命天涯.......穷追不舍的警探黄兰登(陈赫饰)、无敌幸运的警察坤泰(肖央饰)、穷凶极恶的匪帮三人组、高深莫测的唐人街教父、美艳风骚的老板娘阿香....
+                    </p>
+                </div>
+
+                <!-- 音乐播放器 -->
+                <div class="music-title">
+                    影片主题曲试听
+                </div>
+
+                <div id="player">
+
+                    <!-- 歌曲信息模块 -->
+                    <div id="player-content1">
+                        <!-- 歌曲名 -->
+                        <div class="music-name"></div>
+                        <!-- 歌手名 -->
+                        <div class="artist-name"></div>
+                        <!-- 歌曲时间 -->
+                        <div class="time">
+                            <!-- 当前播放的时间 -->
+                            <div class="current-time"></div>
+                            <!-- 歌曲总时长 -->
+                            <div class="total-time"></div>
+                        </div>
+                        <!-- 进度条 -->
+                        <div id="s-area">
+                            <!-- 鼠标移动到进度条上，显示的时间信息 -->
+                            <div id="ins-time"></div>
+                            <!-- 鼠标移动到进度条上，进度条变暗部分-->
+                            <div id="s-hover"></div>
+                            <!-- 表示当前歌曲播放进度的蓝色进度条 -->
+                            <div id="seek-bar"></div>
+                        </div>
+                    </div>
+
+                    <!-- 控制模块 -->
+                    <div id="player-content2">
+                        <!-- 左侧歌曲封面旋转模块 -->
+                        <div class="music-imgs">
+                            <!-- 封面图 -->
+                            <div class="img"></div>
+                            <!-- 歌曲缓冲时的提示文字 -->
+                            <div id="buffer-box">缓冲…</div>
+                        </div>
+                        <!-- 右侧歌曲操作模块 -->
+                        <div class="player-controls">
+                            <!-- 上一首按钮 -->
+                            <div class="btn prev iconfont">&#xe603;</div>
+                            <!-- 暂停/播放 按钮 -->
+                            <div class="btn play-pause icon-jiediankaishi iconfont"></div>
+                            <!-- 下一首按钮 -->
+                            <div class="btn next iconfont">&#xe602;</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- 视频播放 -->
+        <div class="cont-video">
+            <div class="video-title">预告片</div>
+            <video width="100%" height="100%" controls>
+                <!-- <source src="../../mp4/李俊鹏.mp4" type="video/mp4"> -->
+            </video>
+        </div>
+    </div>
+    <!-- 页脚 -->
+    <footer>
+        <div class="foot_content">
+            <p>本网站仅用于交流学习</p>
+            <p>如有侵权 请联系:1700159418@qq.com</p>
+            <p>作者:唐玉薇 马明杰</p>
+            <p>@广西财经学院 数媒2121班</p>
+        </div>
+    </footer>
+    <!-- <script src="../../js/index.js"></script> -->
+    <script src="../../js/jquery-3.5.1.min.js"></script>
+    <script src="../../js/music.js"></script>
+</body>
+
+</html>
